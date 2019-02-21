@@ -10,6 +10,14 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+
+    
+    @IBAction func Register(_ sender: Any)
+    {
+        print("Register");
+//        performSegue(withIdentifier: PasswordViewIdentifier, sender: self)
+//        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

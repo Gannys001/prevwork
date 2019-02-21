@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA34DE53221E0C6B00F17647 /* ProbabilityCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34DE52221E0C6B00F17647 /* ProbabilityCalculatorViewController.swift */; };
 		EA82202C221B4F8B00CE07C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82202B221B4F8B00CE07C9 /* AppDelegate.swift */; };
 		EA82202E221B4F8B00CE07C9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82202D221B4F8B00CE07C9 /* FirstViewController.swift */; };
 		EA822030221B4F8B00CE07C9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82202F221B4F8B00CE07C9 /* SecondViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA34DE52221E0C6B00F17647 /* ProbabilityCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProbabilityCalculatorViewController.swift; sourceTree = "<group>"; };
 		EA822028221B4F8B00CE07C9 /* Prevwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prevwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA82202B221B4F8B00CE07C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA82202D221B4F8B00CE07C9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		EA82202A221B4F8B00CE07C9 /* Prevwork */ = {
 			isa = PBXGroup;
 			children = (
+				EA34DE52221E0C6B00F17647 /* ProbabilityCalculatorViewController.swift */,
 				EA82202B221B4F8B00CE07C9 /* AppDelegate.swift */,
 				EA82202D221B4F8B00CE07C9 /* FirstViewController.swift */,
 				EA82202F221B4F8B00CE07C9 /* SecondViewController.swift */,
@@ -261,6 +264,7 @@
 			files = (
 				EA822030221B4F8B00CE07C9 /* SecondViewController.swift in Sources */,
 				EA82202C221B4F8B00CE07C9 /* AppDelegate.swift in Sources */,
+				EA34DE53221E0C6B00F17647 /* ProbabilityCalculatorViewController.swift in Sources */,
 				EA82202E221B4F8B00CE07C9 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

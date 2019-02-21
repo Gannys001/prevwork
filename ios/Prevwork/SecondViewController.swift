@@ -19,7 +19,7 @@ class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     
     var age = ["10-20", "20-30", "30-40"];
     var sex = ["Male", "Female"];
-    // var occupation = ....
+    var occupation = ["Construction", "Health"];
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1;
@@ -36,6 +36,10 @@ class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
             countRow = self.age.count;
         }
         
+        if(pickerView == OccupPick){
+            countRow = self.occupation.count;
+        }
+        
         return countRow;
     }
     
@@ -47,6 +51,10 @@ class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
         }
         else if(pickerView == SexPick){
             let titleRow = sex[row];
+            return titleRow;
+        }
+        else if(pickerView == OccupPick){
+            let titleRow = occupation[row];
             return titleRow;
         }
         return " ";
@@ -62,12 +70,11 @@ class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
             self.AgeTex.text = self.age[row];
             self.AgePick.isHidden = true;
         }
-       
-        // TODO ! The following is for occupation
-//        if(pickerView == AgePick){
-//            self.AgeTex.text = self.age[row];
-//            self.AgePick.isHidden = true;
-//        }
+        if(pickerView == OccupPick){
+            self.OccupTex.text = self.occupation[row];
+            self.OccupPick.isHidden = true;
+        }
+    
         
     }
     
@@ -77,6 +84,9 @@ class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
         }
         else if(textField == self.AgeTex){
             self.AgePick.isHidden = false;
+        }
+        else if(textField == self.OccupTex){
+            self.OccupPick.isHidden = false;
         }
     }
    
