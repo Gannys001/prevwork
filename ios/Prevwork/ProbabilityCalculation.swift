@@ -1,21 +1,15 @@
 //
-//  SecondViewController.swift
+//  ProbabilityCalculation.swift
 //  Prevwork
 //
-//  Created by Angela He on 2/18/19.
+//  Created by Angela He on 2/20/19.
 //  Copyright © 2019 Angela He. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource, UITextFieldDelegate {
-    
-    @IBOutlet weak var SexTex: UITextField!
-    @IBOutlet weak var AgeTex: UITextField!
-    @IBOutlet weak var OccupTex: UITextField!
-    @IBOutlet weak var SexPick: UIPickerView!
-    @IBOutlet weak var AgePick: UIPickerView!
-    @IBOutlet weak var OccupPick: UIPickerView!
+class ProbabilityCalculationViewController: UIViewController {
     
     var age = ["10-20", "20-30", "30-40"];
     var sex = ["Male", "Female"];
@@ -59,7 +53,7 @@ class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
         }
         return " ";
     }
-
+    
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if(pickerView == SexPick){
@@ -74,7 +68,7 @@ class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
             self.OccupTex.text = self.occupation[row];
             self.OccupPick.isHidden = true;
         }
-    
+        
         
     }
     
@@ -89,12 +83,17 @@ class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
             self.OccupPick.isHidden = false;
         }
     }
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
 }
-

@@ -99,15 +99,23 @@
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="wMb-9Y-L84"/>
                                 </connections>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Probability  Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZZ-CP-DmY">
-                                <rect key="frame" x="51" y="36" width="285" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Occupation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdG-L4-2gz">
+                                <rect key="frame" x="42" y="348" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Occupation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdG-L4-2gz">
-                                <rect key="frame" x="42" y="348" width="89" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="po7-79-qyU">
+                                <rect key="frame" x="7" y="20" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back button"/>
+                                <connections>
+                                    <segue destination="FIL-at-FQs" kind="show" id="Doa-Du-AIL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Probability  Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZZ-CP-DmY">
+                                <rect key="frame" x="42" y="35" width="285" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -131,13 +139,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+            <point key="canvasLocation" x="788" y="586.95652173913049"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <tabBar key="tabBar" hidden="YES" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -154,7 +162,7 @@
         <!--LoginScreen-->
         <scene sceneID="pKk-Ch-bH5">
             <objects>
-                <viewController id="FIL-at-FQs" userLabel="LoginScreen" customClass="ViewController" customModule="prevworks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FIL-at-FQs" userLabel="LoginScreen" customClass="FirstViewController" customModule="Prevwork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HUp-yV-fN8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,7 +178,7 @@
                                     <constraint firstAttribute="height" constant="516" id="csc-A2-PqX"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H0r-1G-98f" customClass="LoginTextField" customModule="prevworks" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H0r-1G-98f" customClass="LoginTextField" customModule="Prevwork" customModuleProvider="target">
                                 <rect key="frame" x="47.666666666666657" y="400" width="280" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="bwf-dQ-0J7"/>
@@ -187,7 +195,7 @@
                                     <constraint firstAttribute="height" constant="74" id="VGU-b6-F4U"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gMn-dy-wV6" customClass="LoginTextField" customModule="prevworks" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gMn-dy-wV6" customClass="LoginTextField" customModule="Prevwork" customModuleProvider="target">
                                 <rect key="frame" x="47.666666666666657" y="327" width="280" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="3sf-6W-2hU"/>
@@ -219,6 +227,10 @@
                                 <state key="normal" title="SIGN IN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="Register:" destination="FIL-at-FQs" eventType="touchUpInside" id="H5N-TL-pxn"/>
+                                    <segue destination="8rJ-Kc-sve" kind="show" identifier="" id="Xvk-dO-rP1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVM-FQ-7bh">
                                 <rect key="frame" x="157" y="557" width="170" height="30"/>
@@ -298,6 +310,7 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Login" id="knA-eH-xOE" userLabel="Login"/>
+                    <navigationItem key="navigationItem" id="PUA-oy-5Qq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugj-sB-KBn" sceneMemberID="firstResponder"/>
             </objects>
@@ -322,7 +335,7 @@
                                     <constraint firstAttribute="height" constant="516" id="zhv-Ak-wAr"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e01-q0-BlD" customClass="LoginTextField" customModule="prevworks" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e01-q0-BlD" customClass="LoginTextField" customModule="Prevwork" customModuleProvider="target">
                                 <rect key="frame" x="47.666666666666657" y="465" width="280" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="4ns-CG-2hc"/>
@@ -338,7 +351,7 @@
                                 <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5yg-Nk-I9v" customClass="LoginTextField" customModule="prevworks" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5yg-Nk-I9v" customClass="LoginTextField" customModule="Prevwork" customModuleProvider="target">
                                 <rect key="frame" x="47.666666666666657" y="391" width="280" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Ahz-ax-mrt"/>
@@ -355,7 +368,7 @@
                                     <constraint firstAttribute="height" constant="74" id="JOo-eg-Srp"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xRc-FM-vHg" customClass="LoginTextField" customModule="prevworks" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xRc-FM-vHg" customClass="LoginTextField" customModule="Prevwork" customModuleProvider="target">
                                 <rect key="frame" x="47.666666666666657" y="318" width="280" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="Gh8-pN-X2s"/>
@@ -486,6 +499,7 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LA9-c3-gZ4"/>
+        <segue reference="Doa-Du-AIL"/>
+        <segue reference="Xvk-dO-rP1"/>
     </inferredMetricsTieBreakers>
 </document>
