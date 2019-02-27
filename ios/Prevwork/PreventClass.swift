@@ -10,11 +10,12 @@ import Foundation
 import UIKit
 
 class PreventClass{
-    var image: UIImage;
+    //var image: UIImage;
     var title: String;
     
-    init(image: UIImage, title: String) {
-        self.image = image;
+    init(title: String) {
+        //self.image = image;
         self.title = title;
     }
+    
 }
