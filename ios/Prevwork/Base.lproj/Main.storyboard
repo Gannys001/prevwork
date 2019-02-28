@@ -283,8 +283,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapinteractive.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="E7Q-nM-xaz">
-                                <rect key="frame" x="61" y="139" width="273" height="194"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapinteractive.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oNw-i3-FnP">
+                                <rect key="frame" x="67" y="160" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
