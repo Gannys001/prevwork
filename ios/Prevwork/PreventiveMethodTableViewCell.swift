@@ -10,8 +10,8 @@ import UIKit
 
 class PreventiveMethodTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var ImageofPain: UIImageView!
-    @IBOutlet weak var NameOfPain: UILabel!
+    
+    @IBOutlet weak var button: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,7 +20,7 @@ class PreventiveMethodTableViewCell: UITableViewCell {
     
     func setPrevent(prevent:PreventClass){
         // set the text of the label
-        NameOfPain.text = prevent.title;
+       
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

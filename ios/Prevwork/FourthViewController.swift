@@ -10,50 +10,34 @@ import UIKit
 
 
 class FourthViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    // table view controller
     
-    var Prevents: [PreventClass] = []
+    let devCourses = [("BackPain"),("MusclePain"),("Headache"),("xxxx"),("xxxx")]
+
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Prevents = createArray();
-        // Do any additional setup after loading the view.
+    }
+    
+    // go back to section
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1;
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Prevents.count;
+        return 5;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let prevent = Prevents[indexPath.row];
+       
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PreventCell") as! PreventiveMethodTableViewCell;
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PreventCell") as! PreventiveMethodTableViewCell
-        
-        let prevent1 = PreventClass(title:"backpain")
-        cell.setPrevent(prevent: prevent1);
+        //cell.label.text = self.devCourses[indexPath.row];
+        cell.button.setTitle(self.devCourses[indexPath.row], for: .normal)
         
         return cell;
     }
 
-    
-    func createArray() -> [PreventClass]{
-        var tempPreventClass:[PreventClass] = []
-    
-        // TODO ADD IMAGE TO THE APP
-        let prevent1 = PreventClass(title:"backpain")
-        let prevent2 = PreventClass(title:"x1")
-        let prevent3 = PreventClass(title:"x2")
-        let prevent4 = PreventClass(title:"x3")
-        
-        tempPreventClass.append(prevent1)
-        tempPreventClass.append(prevent2)
-        tempPreventClass.append(prevent3)
-        tempPreventClass.append(prevent4)
-        
-        return tempPreventClass
-    }
-    
-    
 
     /*
     // MARK: - Navigation

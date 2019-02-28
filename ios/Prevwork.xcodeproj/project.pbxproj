@@ -11,6 +11,7 @@
 		EA0CFABF22267F4000093E38 /* PreventiveMethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0CFABE22267F4000093E38 /* PreventiveMethodTableViewCell.swift */; };
 		EA0CFAC12226800B00093E38 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0CFAC02226800B00093E38 /* FourthViewController.swift */; };
 		EA0CFAC32226804B00093E38 /* PreventClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0CFAC22226804B00093E38 /* PreventClass.swift */; };
+		EA77D2A622277D99007E9AEE /* mapinteractive.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA77D2A522277D99007E9AEE /* mapinteractive.jpg */; };
 		EA82202C221B4F8B00CE07C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82202B221B4F8B00CE07C9 /* AppDelegate.swift */; };
 		EA82202E221B4F8B00CE07C9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82202D221B4F8B00CE07C9 /* FirstViewController.swift */; };
 		EA822030221B4F8B00CE07C9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82202F221B4F8B00CE07C9 /* SecondViewController.swift */; };
@@ -43,6 +44,7 @@
 		EA0CFABE22267F4000093E38 /* PreventiveMethodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventiveMethodTableViewCell.swift; sourceTree = "<group>"; };
 		EA0CFAC02226800B00093E38 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		EA0CFAC22226804B00093E38 /* PreventClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventClass.swift; sourceTree = "<group>"; };
+		EA77D2A522277D99007E9AEE /* mapinteractive.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mapinteractive.jpg; sourceTree = "<group>"; };
 		EA822028221B4F8B00CE07C9 /* Prevwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prevwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA82202B221B4F8B00CE07C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA82202D221B4F8B00CE07C9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				2AAE161B221E07F400E88F02 /* LoginTextField.swift */,
+				EA77D2A522277D99007E9AEE /* mapinteractive.jpg */,
 				EA82202B221B4F8B00CE07C9 /* AppDelegate.swift */,
 				EA82202D221B4F8B00CE07C9 /* FirstViewController.swift */,
 				EA82202F221B4F8B00CE07C9 /* SecondViewController.swift */,
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA822038221B4F8C00CE07C9 /* LaunchScreen.storyboard in Resources */,
+				EA77D2A622277D99007E9AEE /* mapinteractive.jpg in Resources */,
 				EA822035221B4F8C00CE07C9 /* Assets.xcassets in Resources */,
 				EA822033221B4F8B00CE07C9 /* Main.storyboard in Resources */,
 			);
