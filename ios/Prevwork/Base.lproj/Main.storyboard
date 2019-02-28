@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.59" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zqk-vU-nGY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.45"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -200,28 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="-564" y="2274.384236453202"/>
-=======
-            <point key="canvasLocation" x="1703" y="463"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="rAf-VD-Skr">
-            <objects>
-                <navigationController id="8qD-tb-BGD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="pCi-ky-xyI"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tht-b6-ESD">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="pg0-ah-aIa"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9H0-yy-SOy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="892" y="618"/>
->>>>>>> a0b2df56a0c1b2467cb007f041d14439c394df2e
         </scene>
         <!--Prevent-->
         <scene sceneID="2bZ-Ap-Qsi">
@@ -287,7 +266,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbA-Ur-iOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="380" y="1461.576354679803"/>
         </scene>
         <!--Item-->
@@ -319,9 +297,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G93-8V-3sy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="888.79999999999995" y="545.32019704433503"/>
-=======
-            <point key="canvasLocation" x="892" y="-71"/>
->>>>>>> a0b2df56a0c1b2467cb007f041d14439c394df2e
         </scene>
         <!--Profile-->
         <scene sceneID="fkl-cA-2uD">
@@ -338,91 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dqc-Ty-WxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2820" y="366"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="L6o-OA-oVk">
-            <objects>
-                <navigationController id="Zqk-vU-nGY" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uDZ-dU-iYk">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="a6F-Om-ZNb" kind="relationship" relationship="rootViewController" id="5YH-9I-XeL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tfx-jF-Gj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1991" y="-483"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="95o-Yy-it0">
-            <objects>
-                <viewController id="OaA-K7-Rfw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aVq-dd-utJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="GBS-Di-g50"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="USn-FS-bVn"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wrY-W3-XpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="817" y="-910"/>
-        </scene>
-        <!--Injuries-->
-        <scene sceneID="69a-YG-1ik">
-            <objects>
-                <viewController id="Nc7-v0-wSV" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3yC-ca-5k3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Eof-1D-u5T"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Injuries" image="injuries" id="V5b-zS-jsn"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4cy-FH-pO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="818" y="-2304"/>
-        </scene>
-        <!--Preventive Methods-->
-        <scene sceneID="R3u-rB-i7V">
-            <objects>
-                <viewController id="bze-Xb-jai" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rFa-oy-AfC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="ry4-Fx-nO9"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Preventive Methods" image="prevetion" id="hz5-BJ-1MZ"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2ed-7C-jvr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="817" y="-1626"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="D3N-Ig-UZJ">
-            <objects>
-                <tabBarController id="cFE-jG-GvO" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Q3Z-Lw-TAr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="Nc7-v0-wSV" kind="relationship" relationship="viewControllers" id="28F-76-VID"/>
-                        <segue destination="bze-Xb-jai" kind="relationship" relationship="viewControllers" id="fja-P0-U9b"/>
-                        <segue destination="OaA-K7-Rfw" kind="relationship" relationship="viewControllers" id="SsT-rg-xBI"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kTL-WH-BAb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-25" y="-991"/>
+            <point key="canvasLocation" x="2378" y="561"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -443,73 +334,9 @@
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
-<<<<<<< HEAD
-=======
             </objects>
-            <point key="canvasLocation" x="-26" y="111"/>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Enter View Controller-->
-        <scene sceneID="fY4-NG-iZ5">
-            <objects>
-                <viewController id="a6F-Om-ZNb" customClass="EnterViewController" customModule="Prevwork" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="EBF-iu-eoo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFb-ec-gVk">
-                                <rect key="frame" x="90" y="386" width="195" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <edgeInsets key="layoutMargins" top="5" left="5" bottom="8" right="5"/>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="42"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Employee">
-                                    <color key="titleColor" red="0.77249568700790405" green="0.08341633528470993" blue="0.46692502498626709" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="cFE-jG-GvO" kind="show" id="PYI-ED-00S"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRH-46-r8E">
-                                <rect key="frame" x="90" y="201" width="195" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <edgeInsets key="layoutMargins" top="5" left="5" bottom="8" right="5"/>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="42"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Employer">
-                                    <color key="titleColor" red="0.77249568700790405" green="0.08341633528470993" blue="0.46692502498626709" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="r5T-HN-NMX"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="HGC-YX-Klk"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="yCP-sg-Hqt"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zva-4X-iST" userLabel="First Responder" sceneMemberID="firstResponder"/>
->>>>>>> a0b2df56a0c1b2467cb007f041d14439c394df2e
-            </objects>
-            <point key="canvasLocation" x="-991.20000000000005" y="-483.25123152709364"/>
-        </scene>
-<<<<<<< HEAD
-=======
-        <!--LoginScreen-->
-        <scene sceneID="pKk-Ch-bH5">
-            <objects>
-                <viewController id="FIL-at-FQs" userLabel="LoginScreen" customClass="FirstViewController" customModule="Prevwork" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="FrontPage" id="rDN-ab-8Z6"/>
-                    <navigationItem key="navigationItem" id="PUA-oy-5Qq"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ugj-sB-KBn" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2282" y="-379"/>
-        </scene>
->>>>>>> a0b2df56a0c1b2467cb007f041d14439c394df2e
         <!--View Controller-->
         <scene sceneID="2Ri-6x-ID0">
             <objects>
@@ -680,19 +507,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WHA-Mb-QZv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2894" y="-379"/>
+            <point key="canvasLocation" x="1476" y="-400"/>
         </scene>
     </scenes>
     <resources>
         <image name="PrevWorks_Logo" width="288" height="98"/>
-        <image name="background" width="1900" height="1200"/>
-        <image name="injuries" width="30" height="30"/>
+        <image name="background" width="1302.857177734375" height="822.85711669921875"/>
         <image name="loginBGCard" width="367" height="477"/>
-<<<<<<< HEAD
         <image name="mapinteractive.jpg" width="236" height="186"/>
-=======
-        <image name="prevetion" width="30" height="30"/>
-        <image name="profile" width="30" height="30"/>
->>>>>>> a0b2df56a0c1b2467cb007f041d14439c394df2e
     </resources>
 </document>
