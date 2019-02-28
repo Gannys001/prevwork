@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2AAE161C221E07F400E88F02 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE161B221E07F400E88F02 /* LoginTextField.swift */; };
+		415E721822276B8700DEB7DF /* EnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415E721722276B8700DEB7DF /* EnterViewController.m */; };
+		415E721A22276BC900DEB7DF /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415E721922276BC900DEB7DF /* EnterViewController.swift */; };
 		EA0CFABF22267F4000093E38 /* PreventiveMethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0CFABE22267F4000093E38 /* PreventiveMethodTableViewCell.swift */; };
 		EA0CFAC12226800B00093E38 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0CFAC02226800B00093E38 /* FourthViewController.swift */; };
 		EA0CFAC32226804B00093E38 /* PreventClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0CFAC22226804B00093E38 /* PreventClass.swift */; };
@@ -40,6 +42,10 @@
 
 /* Begin PBXFileReference section */
 		2AAE161B221E07F400E88F02 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		415E721222276AAC00DEB7DF /* Prevwork-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Prevwork-Bridging-Header.h"; sourceTree = "<group>"; };
+		415E721622276B8700DEB7DF /* EnterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnterViewController.h; sourceTree = "<group>"; };
+		415E721722276B8700DEB7DF /* EnterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnterViewController.m; sourceTree = "<group>"; };
+		415E721922276BC900DEB7DF /* EnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterViewController.swift; sourceTree = "<group>"; };
 		EA0CFABE22267F4000093E38 /* PreventiveMethodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventiveMethodTableViewCell.swift; sourceTree = "<group>"; };
 		EA0CFAC02226800B00093E38 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		EA0CFAC22226804B00093E38 /* PreventClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventClass.swift; sourceTree = "<group>"; };
@@ -87,6 +93,8 @@
 		EA82201F221B4F8B00CE07C9 = {
 			isa = PBXGroup;
 			children = (
+				415E721622276B8700DEB7DF /* EnterViewController.h */,
+				415E721722276B8700DEB7DF /* EnterViewController.m */,
 				EA82202A221B4F8B00CE07C9 /* Prevwork */,
 				EA822041221B4F8C00CE07C9 /* PrevworkTests */,
 				EA82204C221B4F8C00CE07C9 /* PrevworkUITests */,
@@ -111,13 +119,15 @@
 				EA82202B221B4F8B00CE07C9 /* AppDelegate.swift */,
 				EA82202D221B4F8B00CE07C9 /* FirstViewController.swift */,
 				EA82202F221B4F8B00CE07C9 /* SecondViewController.swift */,
-				EA822031221B4F8B00CE07C9 /* Main.storyboard */,
+				415E721922276BC900DEB7DF /* EnterViewController.swift */,
 				EA0CFAC02226800B00093E38 /* FourthViewController.swift */,
 				EA0CFAC22226804B00093E38 /* PreventClass.swift */,
 				EA0CFABE22267F4000093E38 /* PreventiveMethodTableViewCell.swift */,
+				EA822031221B4F8B00CE07C9 /* Main.storyboard */,
 				EA822034221B4F8C00CE07C9 /* Assets.xcassets */,
 				EA822036221B4F8C00CE07C9 /* LaunchScreen.storyboard */,
 				EA822039221B4F8C00CE07C9 /* Info.plist */,
+				415E721222276AAC00DEB7DF /* Prevwork-Bridging-Header.h */,
 			);
 			path = Prevwork;
 			sourceTree = "<group>";
@@ -208,6 +218,7 @@
 				TargetAttributes = {
 					EA822027221B4F8B00CE07C9 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					EA82203D221B4F8C00CE07C9 = {
 						CreatedOnToolsVersion = 10.1;
@@ -276,8 +287,10 @@
 				EA0CFAC32226804B00093E38 /* PreventClass.swift in Sources */,
 				2AAE161C221E07F400E88F02 /* LoginTextField.swift in Sources */,
 				EA82202C221B4F8B00CE07C9 /* AppDelegate.swift in Sources */,
+				415E721822276B8700DEB7DF /* EnterViewController.m in Sources */,
 				EA0CFABF22267F4000093E38 /* PreventiveMethodTableViewCell.swift in Sources */,
 				EA82202E221B4F8B00CE07C9 /* FirstViewController.swift in Sources */,
+				415E721A22276BC900DEB7DF /* EnterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DK8A4L59UQ;
 				INFOPLIST_FILE = Prevwork/Info.plist;
@@ -461,6 +475,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Prevwork.Prevwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Prevwork/Prevwork-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DK8A4L59UQ;
 				INFOPLIST_FILE = Prevwork/Info.plist;
@@ -479,6 +496,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Prevwork.Prevwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Prevwork/Prevwork-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
