@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2AAE161C221E07F400E88F02 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE161B221E07F400E88F02 /* LoginTextField.swift */; };
+		2AAE16202228AC4B00E88F02 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE161F2228AC4B00E88F02 /* ProfileViewController.swift */; };
+		2AAE16222228BF3E00E88F02 /* ProfileEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE16212228BF3E00E88F02 /* ProfileEditorViewController.swift */; };
 		EA0CFABF22267F4000093E38 /* PreventiveMethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0CFABE22267F4000093E38 /* PreventiveMethodTableViewCell.swift */; };
 		EA0CFAC12226800B00093E38 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0CFAC02226800B00093E38 /* FourthViewController.swift */; };
 		EA0CFAC32226804B00093E38 /* PreventClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0CFAC22226804B00093E38 /* PreventClass.swift */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		2AAE161B221E07F400E88F02 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		2AAE161F2228AC4B00E88F02 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2AAE16212228BF3E00E88F02 /* ProfileEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorViewController.swift; sourceTree = "<group>"; };
 		EA0CFABE22267F4000093E38 /* PreventiveMethodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventiveMethodTableViewCell.swift; sourceTree = "<group>"; };
 		EA0CFAC02226800B00093E38 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		EA0CFAC22226804B00093E38 /* PreventClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventClass.swift; sourceTree = "<group>"; };
@@ -113,8 +117,10 @@
 				EA77D2A522277D99007E9AEE /* mapinteractive.jpg */,
 				EA82202B221B4F8B00CE07C9 /* AppDelegate.swift */,
 				EA82202D221B4F8B00CE07C9 /* FirstViewController.swift */,
+				2AAE161F2228AC4B00E88F02 /* ProfileViewController.swift */,
 				EA82202F221B4F8B00CE07C9 /* SecondViewController.swift */,
 				EA822031221B4F8B00CE07C9 /* Main.storyboard */,
+				2AAE16212228BF3E00E88F02 /* ProfileEditorViewController.swift */,
 				EA0CFAC02226800B00093E38 /* FourthViewController.swift */,
 				EA0CFAC22226804B00093E38 /* PreventClass.swift */,
 				EA0CFABE22267F4000093E38 /* PreventiveMethodTableViewCell.swift */,
@@ -278,9 +284,11 @@
 				EA0CFAC12226800B00093E38 /* FourthViewController.swift in Sources */,
 				EA822030221B4F8B00CE07C9 /* SecondViewController.swift in Sources */,
 				EA0CFAC32226804B00093E38 /* PreventClass.swift in Sources */,
+				2AAE16222228BF3E00E88F02 /* ProfileEditorViewController.swift in Sources */,
 				2AAE161C221E07F400E88F02 /* LoginTextField.swift in Sources */,
 				EA82202C221B4F8B00CE07C9 /* AppDelegate.swift in Sources */,
 				EA0CFABF22267F4000093E38 /* PreventiveMethodTableViewCell.swift in Sources */,
+				2AAE16202228AC4B00E88F02 /* ProfileViewController.swift in Sources */,
 				EA82202E221B4F8B00CE07C9 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,13 +465,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DK8A4L59UQ;
+				DEVELOPMENT_TEAM = VX62Z43M83;
 				INFOPLIST_FILE = Prevwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Prevwork.Prevwork;
+				PRODUCT_BUNDLE_IDENTIFIER = Prevwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -475,13 +483,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DK8A4L59UQ;
+				DEVELOPMENT_TEAM = VX62Z43M83;
 				INFOPLIST_FILE = Prevwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Prevwork.Prevwork;
+				PRODUCT_BUNDLE_IDENTIFIER = Prevwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
