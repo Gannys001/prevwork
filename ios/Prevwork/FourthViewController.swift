@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+// preventive method dview controller
 class FourthViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let devCourses = [("BackPain"),("MusclePain"),("Headache"),("xxxx"),("xxxx")]
@@ -38,7 +38,15 @@ class FourthViewController: UIViewController, UITableViewDataSource, UITableView
         return cell;
     }
 
-
+    // send the title of the current story board
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if (segue.identifier == "ToDetailedPage") {
+            // send the detailed information
+            let vc = segue.destination as! PreventDetailedViewController
+            vc.desiredLabelValue = (sender as! UIButton).titleLabel!.text!
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

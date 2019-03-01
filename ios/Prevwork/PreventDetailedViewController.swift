@@ -9,13 +9,17 @@
 import UIKit
 
 class PreventDetailedViewController: UIViewController {
-
+    // the desired label value of the label
+    var desiredLabelValue: String!
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        titleLabel.text = desiredLabelValue
+        
         // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation
