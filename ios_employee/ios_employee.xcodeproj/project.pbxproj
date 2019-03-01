@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111A2D762228FBDD00E44192 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111A2D752228FBDD00E44192 /* ProfileViewController.swift */; };
+		114A5A282228F13700303201 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 114A5A262228F13700303201 /* DLRadioButton.m */; };
 		415E72642227CC2C00DEB7DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415E72632227CC2C00DEB7DF /* AppDelegate.swift */; };
 		415E72662227CC2C00DEB7DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415E72652227CC2C00DEB7DF /* ViewController.swift */; };
 		415E72692227CC2C00DEB7DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415E72672227CC2C00DEB7DF /* Main.storyboard */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		111A2D752228FBDD00E44192 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		114A5A252228F13600303201 /* ios_employee-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios_employee-Bridging-Header.h"; sourceTree = "<group>"; };
+		114A5A262228F13700303201 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
+		114A5A272228F13700303201 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
 		415E72602227CC2C00DEB7DF /* ios_employee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_employee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		415E72632227CC2C00DEB7DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		415E72652227CC2C00DEB7DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,12 +60,16 @@
 		415E72622227CC2C00DEB7DF /* ios_employee */ = {
 			isa = PBXGroup;
 			children = (
+				111A2D752228FBDD00E44192 /* ProfileViewController.swift */,
 				415E72632227CC2C00DEB7DF /* AppDelegate.swift */,
 				415E72652227CC2C00DEB7DF /* ViewController.swift */,
 				415E72672227CC2C00DEB7DF /* Main.storyboard */,
 				415E726A2227CC2D00DEB7DF /* Assets.xcassets */,
 				415E726C2227CC2D00DEB7DF /* LaunchScreen.storyboard */,
+				114A5A272228F13700303201 /* DLRadioButton.h */,
+				114A5A262228F13700303201 /* DLRadioButton.m */,
 				415E726F2227CC2D00DEB7DF /* Info.plist */,
+				114A5A252228F13600303201 /* ios_employee-Bridging-Header.h */,
 			);
 			path = ios_employee;
 			sourceTree = "<group>";
@@ -96,6 +106,7 @@
 				TargetAttributes = {
 					415E725F2227CC2C00DEB7DF = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -136,6 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				415E72662227CC2C00DEB7DF /* ViewController.swift in Sources */,
+				114A5A282228F13700303201 /* DLRadioButton.m in Sources */,
+				111A2D762228FBDD00E44192 /* ProfileViewController.swift in Sources */,
 				415E72642227CC2C00DEB7DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,16 +295,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9CAG6T4A68;
 				INFOPLIST_FILE = ios_employee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cs401-PrevWorks.ios-employee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "ios_employee/ios_employee-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -300,16 +317,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9CAG6T4A68;
 				INFOPLIST_FILE = ios_employee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cs401-PrevWorks.ios-employee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "ios_employee/ios_employee-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
