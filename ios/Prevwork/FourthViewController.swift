@@ -12,11 +12,14 @@ import UIKit
 class FourthViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let devCourses = [("BackPain"),("MusclePain"),("Headache"),("xxxx"),("xxxx")]
+    
 
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Preventive Method";
+        
     }
     
     // go back to section
