@@ -10,21 +10,43 @@ import UIKit
 
 class RecoveryViewController: UIViewController {
 
+    @IBOutlet weak var HorizontalScrollView: UICollectionView!
+    
+    @IBOutlet weak var VerticalScrollView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension RecoveryViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == self.HorizontalScrollView {
+            return 10
+        } else{
+            return 20;
+        }
     }
-    */
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        if collectionView == self.HorizontalScrollView {
+            let cell = HorizontalScrollView.dequeueReusableCell(withReuseIdentifier: "ScrollInjury", for: indexPath) as! CollectionViewCell
+            
+            cell.button.setTitle("Injury", for: .normal);
+            
+            return cell;
+        } else{
+                let cell = VerticalScrollView.dequeueReusableCell(withReuseIdentifier: "VerticalInjury", for: indexPath) as! IndustryCollectionViewCell
+                
+                cell.button.setTitle("Industry", for: .normal);
+                
+                return cell;
+        }
+        
+    }
+    
 
 }

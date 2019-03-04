@@ -23,6 +23,8 @@
 		EA822043221B4F8C00CE07C9 /* PrevworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA822042221B4F8C00CE07C9 /* PrevworkTests.swift */; };
 		EA82204E221B4F8C00CE07C9 /* PrevworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82204D221B4F8C00CE07C9 /* PrevworkUITests.swift */; };
 		EA9D8F132228D9FA00EE41B5 /* PreventDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D8F122228D9FA00EE41B5 /* PreventDetailedViewController.swift */; };
+		EAB54400222D004F008AFF98 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB543FF222D004F008AFF98 /* CollectionViewCell.swift */; };
+		EAB54402222D03D9008AFF98 /* IndustryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB54401222D03D9008AFF98 /* IndustryCollectionViewCell.swift */; };
 		EAD91A262229C1FC0027A58C /* RecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD91A252229C1FC0027A58C /* RecoveryViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,8 @@
 		EA82204D221B4F8C00CE07C9 /* PrevworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevworkUITests.swift; sourceTree = "<group>"; };
 		EA82204F221B4F8C00CE07C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA9D8F122228D9FA00EE41B5 /* PreventDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventDetailedViewController.swift; sourceTree = "<group>"; };
+		EAB543FF222D004F008AFF98 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		EAB54401222D03D9008AFF98 /* IndustryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndustryCollectionViewCell.swift; sourceTree = "<group>"; };
 		EAD91A252229C1FC0027A58C /* RecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +128,8 @@
 				2AAE161F2228AC4B00E88F02 /* ProfileViewController.swift */,
 				EA82202F221B4F8B00CE07C9 /* SecondViewController.swift */,
 				EA822031221B4F8B00CE07C9 /* Main.storyboard */,
+				EAB54401222D03D9008AFF98 /* IndustryCollectionViewCell.swift */,
+				EAB543FF222D004F008AFF98 /* CollectionViewCell.swift */,
 				EAD91A252229C1FC0027A58C /* RecoveryViewController.swift */,
 				EA9D8F122228D9FA00EE41B5 /* PreventDetailedViewController.swift */,
 				2AAE16212228BF3E00E88F02 /* ProfileEditorViewController.swift */,
@@ -289,6 +295,7 @@
 			files = (
 				EA0CFAC12226800B00093E38 /* FourthViewController.swift in Sources */,
 				EA822030221B4F8B00CE07C9 /* SecondViewController.swift in Sources */,
+				EAB54400222D004F008AFF98 /* CollectionViewCell.swift in Sources */,
 				EA0CFAC32226804B00093E38 /* PreventClass.swift in Sources */,
 				EA9D8F132228D9FA00EE41B5 /* PreventDetailedViewController.swift in Sources */,
 				2AAE16222228BF3E00E88F02 /* ProfileEditorViewController.swift in Sources */,
@@ -298,6 +305,7 @@
 				EA0CFABF22267F4000093E38 /* PreventiveMethodTableViewCell.swift in Sources */,
 				2AAE16202228AC4B00E88F02 /* ProfileViewController.swift in Sources */,
 				EA82202E221B4F8B00CE07C9 /* FirstViewController.swift in Sources */,
+				EAB54402222D03D9008AFF98 /* IndustryCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
