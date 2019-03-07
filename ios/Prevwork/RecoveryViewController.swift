@@ -37,7 +37,7 @@ extension RecoveryViewController: UICollectionViewDelegate, UICollectionViewData
             
             switch indexPath.row {
                 case 0:
-                    cell.button.setTitle("Fractures", for: .normal);
+                    cell.button.setTitle("Lower Back Pain", for: .normal);
                 case 1:
                     cell.button.setTitle("Sprains", for: .normal);
                 case 2:
@@ -96,6 +96,14 @@ extension RecoveryViewController: UICollectionViewDelegate, UICollectionViewData
                 return cell;
         }
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if (segue.identifier == "ToRecoveryDetailed") {
+            // send the detailed information
+            let vc = segue.destination as! RecoveryDetailedViewController
+            vc.desiredLabelValue = (sender as! UIButton).titleLabel?.text!
+        }
     }
     
 }

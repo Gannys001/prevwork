@@ -255,12 +255,14 @@
                         <viewLayoutGuide key="safeArea" id="4KT-0S-kxq"/>
                     </view>
                     <connections>
+                        <outlet property="TextBox" destination="jLW-4O-kQv" id="qgm-3c-uxq"/>
+                        <outlet property="image" destination="GZu-uI-Cb7" id="eGi-gD-MRz"/>
                         <outlet property="titleLabel" destination="pst-nR-PV9" id="BlW-de-Tdm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uC-pv-AJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="2233.7438423645322"/>
+            <point key="canvasLocation" x="380" y="2274"/>
         </scene>
         <!--Fourth View Controller-->
         <scene sceneID="2bZ-Ap-Qsi">
@@ -335,36 +337,80 @@
             </objects>
             <point key="canvasLocation" x="380" y="1461.576354679803"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="xBN-iK-h7G">
+            <objects>
+                <viewController id="jLg-Hv-cW0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hZR-Sf-JT3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4qk-ot-hyk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="F6j-oe-7xh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cj4-li-Ilc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2212" y="-791"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tD2-4g-thg">
+            <objects>
+                <navigationController id="s2D-rM-6sY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7G7-mD-WaD">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jLg-Hv-cW0" kind="relationship" relationship="rootViewController" id="Tof-SL-YUq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8Z-bB-dht" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1370" y="-790"/>
+        </scene>
         <!--Home-->
         <scene sceneID="tCG-6E-2Ry">
             <objects>
-                <viewController id="kUd-nG-cqB" userLabel="Home" sceneMemberID="viewController">
+                <viewController id="kUd-nG-cqB" userLabel="Home" customClass="MainViewController" customModule="Prevwork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iu2-7J-Ptv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PrevWorks_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="cR2-3C-s4n">
-                                <rect key="frame" x="67" y="33" width="240" height="128"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s1O-JJ-pII">
-                                <rect key="frame" x="67" y="201" width="240" height="283.33333333333331"/>
+                                <rect key="frame" x="16" y="166" width="355" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">About Us:  PrevWORKS’ proactive, data-driven approach to workers’ comp is dedicated to the needs of both employers and employees with a system that optimizes the well-being, safety and productivity of workers by minimizing workplace risks. This approach prioritizes workplace safety to protect employees, improve morale, and enhance productivity. It also helps employers improve the way they evaluate and mitigate job risks among their employees, thus reducing costs and the time spent on workers’ comp claims.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j8U-jD-SaE">
-                                <rect key="frame" x="85" y="550" width="205" height="40"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discover" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbn-K2-INZ">
-                                <rect key="frame" x="154" y="508" width="67" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tll-3m-ucq">
+                                <rect key="frame" x="157" y="539" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Discover"/>
+                                <connections>
+                                    <segue destination="jLg-Hv-cW0" kind="show" id="Ucu-bf-PiX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The most popular industry in your state: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkA-cB-ps1">
+                                <rect key="frame" x="8" y="436" width="309" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PrevWorks_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="cR2-3C-s4n">
+                                <rect key="frame" x="67" y="20" width="240" height="128"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j8U-jD-SaE">
+                                <rect key="frame" x="85" y="491" width="205" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kUd-nG-cqB" id="kxL-4t-NCh"/>
+                                    <outlet property="delegate" destination="kUd-nG-cqB" id="Rfv-tB-chu"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -375,6 +421,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Cpm-g5-m9H"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="statePicker" destination="j8U-jD-SaE" id="9c2-Xc-UMc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G93-8V-3sy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -910,6 +959,9 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="264" height="86"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <segue destination="mWq-Jc-bx9" kind="show" identifier="ToRecoveryDetail" id="NTZ-fT-ahr"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </view>
@@ -988,6 +1040,53 @@
             </objects>
             <point key="canvasLocation" x="-2058.4000000000001" y="-58.374384236453203"/>
         </scene>
+        <!--Recovery Detailed View Controller-->
+        <scene sceneID="V8d-Gf-Pb2">
+            <objects>
+                <viewController id="mWq-Jc-bx9" customClass="RecoveryDetailedViewController" customModule="Prevwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m3O-cO-7SW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpD-FH-12W">
+                                <rect key="frame" x="166" y="220" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YJl-38-OTA">
+                                <rect key="frame" x="67" y="270" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="mWq-Jc-bx9" id="7mw-9K-gOB"/>
+                                </connections>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ww-9o-Mow">
+                                <rect key="frame" x="166" y="426" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aAK-XB-FGx"/>
+                    </view>
+                    <connections>
+                        <outlet property="URL" destination="7Ww-9o-Mow" id="z0A-6N-8uf"/>
+                        <outlet property="detailedText" destination="YJl-38-OTA" id="QZ5-di-DYG"/>
+                        <outlet property="label" destination="dpD-FH-12W" id="gQw-VD-e5W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N3t-0y-1bi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2058.4000000000001" y="660.59113300492618"/>
+        </scene>
     </scenes>
     <resources>
         <image name="PrevWorks_Logo" width="288" height="98"/>
@@ -997,6 +1096,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="i8j-Tz-WOb"/>
-        <segue reference="7RB-Zg-Q7r"/>
+        <segue reference="V9T-nw-DsG"/>
+        <segue reference="Ucu-bf-PiX"/>
     </inferredMetricsTieBreakers>
 </document>
