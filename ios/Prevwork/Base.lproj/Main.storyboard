@@ -337,48 +337,83 @@
             </objects>
             <point key="canvasLocation" x="380" y="1461.576354679803"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="xBN-iK-h7G">
-            <objects>
-                <viewController id="jLg-Hv-cW0" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hZR-Sf-JT3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="4qk-ot-hyk"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="F6j-oe-7xh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cj4-li-Ilc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2212" y="-791"/>
-        </scene>
-        <!--Navigation Controller-->
+        <!--Main-->
         <scene sceneID="tD2-4g-thg">
             <objects>
                 <navigationController id="s2D-rM-6sY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Main" id="7h6-BN-rzF"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7G7-mD-WaD">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="jLg-Hv-cW0" kind="relationship" relationship="rootViewController" id="Tof-SL-YUq"/>
+                        <segue destination="kUd-nG-cqB" kind="relationship" relationship="rootViewController" id="DJR-8D-uhS"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8Z-bB-dht" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1370" y="-790"/>
+            <point key="canvasLocation" x="-1489" y="-856"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="QNm-Xl-CTQ">
+            <objects>
+                <viewController id="uJD-Az-70r" customClass="StateDetailedViewController" customModule="Prevwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Apu-JE-MXH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPH-qA-pNS">
+                                <rect key="frame" x="96" y="147" width="183" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jt6-DD-fLt">
+                                <rect key="frame" x="33" y="372" width="285" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LPv-Sr-XKC">
+                                        <rect key="frame" x="8" y="8" width="277" height="212"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7nc-d5-4FK">
+                                <rect key="frame" x="55" y="225" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="C3e-FI-ZLU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="cSr-cE-VWJ"/>
+                    <navigationItem key="navigationItem" id="mH6-H8-aTg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="detailedText" destination="LPv-Sr-XKC" id="hYx-0F-3EZ"/>
+                        <outlet property="stateLabel" destination="qPH-qA-pNS" id="i6B-RI-xhj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6h1-cW-3Nv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1215.2" y="-1532.5123152709359"/>
         </scene>
         <!--Home-->
         <scene sceneID="tCG-6E-2Ry">
             <objects>
                 <viewController id="kUd-nG-cqB" userLabel="Home" customClass="MainViewController" customModule="Prevwork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iu2-7J-Ptv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s1O-JJ-pII">
-                                <rect key="frame" x="16" y="166" width="355" height="210"/>
+                                <rect key="frame" x="20" y="259" width="355" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">About Us:  PrevWORKS’ proactive, data-driven approach to workers’ comp is dedicated to the needs of both employers and employees with a system that optimizes the well-being, safety and productivity of workers by minimizing workplace risks. This approach prioritizes workplace safety to protect employees, improve morale, and enhance productivity. It also helps employers improve the way they evaluate and mitigate job risks among their employees, thus reducing costs and the time spent on workers’ comp claims.</string>
@@ -386,25 +421,25 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tll-3m-ucq">
-                                <rect key="frame" x="157" y="539" width="60" height="30"/>
+                                <rect key="frame" x="121" y="637" width="132" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Discover"/>
                                 <connections>
-                                    <segue destination="jLg-Hv-cW0" kind="show" id="Ucu-bf-PiX"/>
+                                    <segue destination="uJD-Az-70r" kind="show" identifier="ToStateDetailed" id="Vqm-76-jXb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The most popular industry in your state: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkA-cB-ps1">
-                                <rect key="frame" x="8" y="436" width="309" height="21"/>
+                                <rect key="frame" x="16" y="502" width="309" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PrevWorks_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="cR2-3C-s4n">
-                                <rect key="frame" x="67" y="20" width="240" height="128"/>
+                                <rect key="frame" x="67" y="108" width="240" height="128"/>
                             </imageView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j8U-jD-SaE">
-                                <rect key="frame" x="85" y="491" width="205" height="40"/>
+                                <rect key="frame" x="85" y="565" width="205" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="dataSource" destination="kUd-nG-cqB" id="kxL-4t-NCh"/>
@@ -415,11 +450,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cR2-3C-s4n" firstAttribute="centerX" secondItem="i6q-3h-sRL" secondAttribute="centerX" id="Hag-iD-q4d"/>
+                            <constraint firstItem="i6q-3h-sRL" firstAttribute="bottom" secondItem="cR2-3C-s4n" secondAttribute="bottom" constant="493" id="VKp-J0-DYl"/>
                             <constraint firstItem="cR2-3C-s4n" firstAttribute="top" secondItem="i6q-3h-sRL" secondAttribute="top" constant="33" id="jE8-Cf-UE9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="i6q-3h-sRL"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Cpm-g5-m9H"/>
+                    <tabBarItem key="tabBarItem" title="Main" id="Cpm-g5-m9H"/>
+                    <navigationItem key="navigationItem" id="9Pf-DQ-gOC"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="statePicker" destination="j8U-jD-SaE" id="9c2-Xc-UMc"/>
@@ -427,7 +464,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G93-8V-3sy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-532" y="-802.46305418719214"/>
+            <point key="canvasLocation" x="-426" y="-856"/>
         </scene>
         <!--Profile-->
         <scene sceneID="fkl-cA-2uD">
@@ -564,11 +601,11 @@
                         <color key="selectedImageTintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="kUd-nG-cqB" kind="relationship" relationship="viewControllers" id="XzR-bc-PaO"/>
                         <segue destination="abf-rB-Xbd" kind="relationship" relationship="viewControllers" id="Z8Y-qJ-1pD"/>
                         <segue destination="T44-QW-1bM" kind="relationship" relationship="viewControllers" id="DRg-NJ-BZM"/>
                         <segue destination="EhE-Vn-4Tp" kind="relationship" relationship="viewControllers" id="7RB-Zg-Q7r"/>
                         <segue destination="5K3-vM-FnO" kind="relationship" relationship="viewControllers" id="i8j-Tz-WOb"/>
+                        <segue destination="s2D-rM-6sY" kind="relationship" relationship="viewControllers" id="eWo-aP-t3M"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -1059,7 +1096,7 @@
                                 <rect key="frame" x="67" y="270" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
@@ -1096,7 +1133,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="i8j-Tz-WOb"/>
-        <segue reference="V9T-nw-DsG"/>
-        <segue reference="Ucu-bf-PiX"/>
+        <segue reference="7RB-Zg-Q7r"/>
     </inferredMetricsTieBreakers>
 </document>

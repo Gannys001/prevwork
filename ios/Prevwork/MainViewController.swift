@@ -14,6 +14,8 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     private var stateOption: [String] = [String]()
     
+    var lastSelected:String!
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int{
         return 1;
     }
@@ -30,8 +32,18 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         super.viewDidLoad()
         stateOption = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID"]
     }
-        // Do any additional setup after loading the view.
-    
+
+    //send the title of the current story board
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if (segue.identifier == "ToStateDetailed") {
+            // send the detailed information
+            let vc = segue.destination as!
+            StateDetailedViewController
+//            vc.desiredLabelValue = "here"
+            vc.desiredLabelValue =  statePicker.selectedRow(inComponent: 0).description
+        }
+    }
+
 
     
 
@@ -47,5 +59,5 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         // Pass the selected object to the new view controller.
     }
     */
-
 }
+

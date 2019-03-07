@@ -16,6 +16,7 @@
 		EA1C24F52230C6060075B4C2 /* RecoveryDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1C24F42230C6060075B4C2 /* RecoveryDetailedViewController.swift */; };
 		EA1C24F722318FF60075B4C2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1C24F622318FF60075B4C2 /* MainViewController.swift */; };
 		EA1C24F9223196350075B4C2 /* StateIndustryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1C24F8223196350075B4C2 /* StateIndustryViewController.swift */; };
+		EA1C24FB22319DFE0075B4C2 /* StateDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1C24FA22319DFE0075B4C2 /* StateDetailedViewController.swift */; };
 		EA77D2A622277D99007E9AEE /* mapinteractive.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA77D2A522277D99007E9AEE /* mapinteractive.jpg */; };
 		EA82202C221B4F8B00CE07C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82202B221B4F8B00CE07C9 /* AppDelegate.swift */; };
 		EA82202E221B4F8B00CE07C9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82202D221B4F8B00CE07C9 /* FirstViewController.swift */; };
@@ -58,6 +59,7 @@
 		EA1C24F42230C6060075B4C2 /* RecoveryDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryDetailedViewController.swift; sourceTree = "<group>"; };
 		EA1C24F622318FF60075B4C2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EA1C24F8223196350075B4C2 /* StateIndustryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateIndustryViewController.swift; sourceTree = "<group>"; };
+		EA1C24FA22319DFE0075B4C2 /* StateDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailedViewController.swift; sourceTree = "<group>"; };
 		EA77D2A522277D99007E9AEE /* mapinteractive.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mapinteractive.jpg; sourceTree = "<group>"; };
 		EA822028221B4F8B00CE07C9 /* Prevwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prevwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA82202B221B4F8B00CE07C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				2AAE161F2228AC4B00E88F02 /* ProfileViewController.swift */,
 				EA82202F221B4F8B00CE07C9 /* SecondViewController.swift */,
 				EA822031221B4F8B00CE07C9 /* Main.storyboard */,
+				EA1C24FA22319DFE0075B4C2 /* StateDetailedViewController.swift */,
 				EA1C24F8223196350075B4C2 /* StateIndustryViewController.swift */,
 				EA1C24F622318FF60075B4C2 /* MainViewController.swift */,
 				EA1C24F42230C6060075B4C2 /* RecoveryDetailedViewController.swift */,
@@ -305,6 +308,7 @@
 				EA0CFAC12226800B00093E38 /* FourthViewController.swift in Sources */,
 				EA822030221B4F8B00CE07C9 /* SecondViewController.swift in Sources */,
 				EAB54400222D004F008AFF98 /* CollectionViewCell.swift in Sources */,
+				EA1C24FB22319DFE0075B4C2 /* StateDetailedViewController.swift in Sources */,
 				EA0CFAC32226804B00093E38 /* PreventClass.swift in Sources */,
 				EA9D8F132228D9FA00EE41B5 /* PreventDetailedViewController.swift in Sources */,
 				EA1C24F52230C6060075B4C2 /* RecoveryDetailedViewController.swift in Sources */,
