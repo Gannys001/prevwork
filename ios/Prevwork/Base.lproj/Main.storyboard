@@ -62,7 +62,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Jh6-7G-3XT"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="FFJ-zt-Su6" userLabel="Risk Calculator"/>
+                    <tabBarItem key="tabBarItem" title="Calculator" id="FFJ-zt-Su6" userLabel="Risk Calculator"/>
                     <navigationItem key="navigationItem" title="Probability Calculator" id="Eho-Ad-FDs"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -429,13 +429,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s1O-JJ-pII">
-                                <rect key="frame" x="10" y="326" width="355" height="107"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">About Us:  PrevWORKS’ proactive, data-driven approach to workers’ comp is dedicated to the needs of both employers and employees with a system that optimizes the well-being, safety and productivity of workers by minimizing workplace risks. This approach prioritizes workplace safety to protect employees, improve morale, and enhance productivity. It also helps employers improve the way they evaluate and mitigate job risks among their employees, thus reducing costs and the time spent on workers’ comp claims.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tll-3m-ucq">
                                 <rect key="frame" x="121" y="643" width="132" height="59"/>
                                 <state key="normal" title="Discover"/>
@@ -449,6 +442,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PrevWorks_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="cR2-3C-s4n">
+                                <rect key="frame" x="63" y="159" width="248" height="75"/>
+                            </imageView>
                             <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j8U-jD-SaE">
                                 <rect key="frame" x="85" y="595" width="205" height="40"/>
                                 <connections>
@@ -456,18 +452,21 @@
                                     <outlet property="delegate" destination="kUd-nG-cqB" id="Rfv-tB-chu"/>
                                 </connections>
                             </pickerView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PrevWorks_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="cR2-3C-s4n">
-                                <rect key="frame" x="63" y="170" width="248" height="75"/>
-                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QI2-LO-4a8">
+                                <rect key="frame" x="16" y="289" width="326" height="216.66666666666666"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">About Us:  PrevWORKS’ proactive, data-driven approach to workers’ comp is dedicated to the needs of both employers and employees with a system that optimizes the well-being, safety and productivity of workers by minimizing workplace risks. This approach prioritizes workplace safety to protect employees, improve morale, and enhance productivity. It also helps employers improve the way they evaluate and mitigate job risks among their employees, thus reducing costs and the time spent on workers’ comp claims.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cR2-3C-s4n" firstAttribute="centerX" secondItem="i6q-3h-sRL" secondAttribute="centerX" id="Hag-iD-q4d"/>
                             <constraint firstItem="Tll-3m-ucq" firstAttribute="top" secondItem="j8U-jD-SaE" secondAttribute="bottom" constant="8" id="IfT-oh-oJ9"/>
                             <constraint firstItem="j8U-jD-SaE" firstAttribute="top" secondItem="JkA-cB-ps1" secondAttribute="bottom" constant="8" id="K2Y-et-GVC"/>
-                            <constraint firstItem="JkA-cB-ps1" firstAttribute="top" secondItem="s1O-JJ-pII" secondAttribute="bottom" constant="55" id="On7-Nf-SR4"/>
                             <constraint firstItem="i6q-3h-sRL" firstAttribute="bottom" secondItem="Tll-3m-ucq" secondAttribute="bottom" constant="27" id="UQK-9Z-zzw"/>
-                            <constraint firstItem="s1O-JJ-pII" firstAttribute="firstBaseline" secondItem="cR2-3C-s4n" secondAttribute="baseline" constant="21" symbolType="layoutAnchor" id="UkR-5r-WZn"/>
                             <constraint firstItem="i6q-3h-sRL" firstAttribute="bottom" secondItem="cR2-3C-s4n" secondAttribute="bottom" constant="493" id="VKp-J0-DYl"/>
                             <constraint firstItem="cR2-3C-s4n" firstAttribute="top" secondItem="i6q-3h-sRL" secondAttribute="top" constant="33" id="jE8-Cf-UE9"/>
                             <constraint firstItem="Tll-3m-ucq" firstAttribute="centerX" secondItem="i6q-3h-sRL" secondAttribute="centerX" id="uT4-fY-4s2"/>
@@ -631,11 +630,11 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Item-->
+        <!--Calculator-->
         <scene sceneID="nD4-By-Guy">
             <objects>
                 <navigationController id="abf-rB-Xbd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="X3V-gi-71l"/>
+                    <tabBarItem key="tabBarItem" title="Calculator" id="X3V-gi-71l"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4DK-U6-k7d">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -648,11 +647,11 @@
             </objects>
             <point key="canvasLocation" x="-759" y="723"/>
         </scene>
-        <!--Item-->
+        <!--Preventative-->
         <scene sceneID="KSA-Jx-BWs">
             <objects>
                 <navigationController id="EhE-Vn-4Tp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="lhD-J4-235"/>
+                    <tabBarItem key="tabBarItem" title="Preventative" id="lhD-J4-235"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uQz-Qz-c8R">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -960,11 +959,11 @@
             </objects>
             <point key="canvasLocation" x="834" y="-942"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="tw3-FX-ajS">
             <objects>
                 <navigationController id="5K3-vM-FnO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gPG-MW-CJA"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="gPG-MW-CJA"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OBr-AG-ecT">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -1123,22 +1122,36 @@
                                 </connections>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More Information Please Visit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyW-yB-qfn">
-                                <rect key="frame" x="60" y="449" width="224" height="21"/>
+                                <rect key="frame" x="67" y="601" width="224" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YL9-Mt-muu">
-                                <rect key="frame" x="60" y="498" width="224" height="30"/>
+                                <rect key="frame" x="67" y="650" width="224" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Click Me!"/>
+                                <connections>
+                                    <action selector="gotoOsha:" destination="mWq-Jc-bx9" eventType="touchUpInside" id="FAz-t9-YZZ"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b7D-BA-k1H">
+                                <rect key="frame" x="60" y="447" width="84" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p71-Ih-a93">
+                                <rect key="frame" x="206" y="447" width="94" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aAK-XB-FGx"/>
                     </view>
                     <connections>
+                        <outlet property="RecoveryImage1" destination="b7D-BA-k1H" id="a7V-ja-x3i"/>
+                        <outlet property="RecoveryImage2" destination="p71-Ih-a93" id="d34-UK-wch"/>
+                        <outlet property="clickMe" destination="YL9-Mt-muu" id="y5r-Nw-4c1"/>
                         <outlet property="detailedText" destination="YJl-38-OTA" id="QZ5-di-DYG"/>
                         <outlet property="label" destination="dpD-FH-12W" id="gQw-VD-e5W"/>
                     </connections>
