@@ -9,6 +9,7 @@
 import UIKit
 
 class PreventDetailedViewController: UIViewController {
+    
     // the desired label value of the label
     var desiredLabelValue: String!
     
@@ -24,27 +25,12 @@ class PreventDetailedViewController: UIViewController {
         super.viewDidLoad()
         titleLabel.text = desiredLabelValue
         // switch desired label value
-        if(desiredLabelValue == "Back Pain"){
+        if(desiredLabelValue == "BackPain"){
             // add the text to the text box
             TextBox.text = infoArray[0];
         }
+       
     }
     
     
-    
-   
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

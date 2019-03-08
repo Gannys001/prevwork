@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecoveryDetailedViewController: UIViewController {
+class RecoveryDetailedViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var detailedText: UITextView!
@@ -25,16 +25,56 @@ class RecoveryDetailedViewController: UIViewController {
         super.viewDidLoad()
         
         label.text = desiredLabelValue
-        //label.text = desiredLabelValue;
         
         // track the desired label
         if(desiredLabelValue == "Lower Back Pain"){
             detailedText.text = infoArray[0];
+            
+            let flowLayout = UICollectionViewFlowLayout()
+            
+            let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: flowLayout)
+            collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "collectionCell")
+            collectionView.delegate = self
+            collectionView.dataSource = self
+            collectionView.backgroundColor = UIColor.cyan
+            
+            // addSubViews
+            self.view.addSubview(collectionView)
         }
 
         // Do any additional setup after loading the view.
     }
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
+        return 8
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath as IndexPath)
+        
+        //cell.backgroundColor = UIColor.green
+        
+       
+        let imageName = "walk.jpg"
+        let image = UIImage(named: imageName)
+    let imageview = UIImageView(image: image!)
+        cell.contentView.addSubview(imageview)
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
+    {
+        return CGSize(width: 100, height: 100)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets
+    {
+        return UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+    }
+
     
 
     /*

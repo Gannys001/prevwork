@@ -99,11 +99,9 @@ extension RecoveryViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if (segue.identifier == "ToRecoveryDetailed") {
-            // send the detailed information
             let vc = segue.destination as! RecoveryDetailedViewController
             vc.desiredLabelValue = (sender as! UIButton).titleLabel?.text!
-        }
+        
     }
     
 }
