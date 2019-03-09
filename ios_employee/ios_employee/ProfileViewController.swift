@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController{
 
     @IBOutlet weak var fName: UITextField!
     @IBOutlet weak var lName: UITextField!
@@ -20,61 +20,47 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var prevOcc: UITextField!
     @IBOutlet weak var curOcc: UITextField!
     
-    
-    var industries = ["Management, business, financial", "Computer, engineering, and science", "Education, legal, community service, arts, and media", "Healthcare practitioners and technical"];
+     let  industries = ["Management, business, financial", "Computer, engineering, and science", "Education, legal, community service, arts, and media", "Healthcare practitioners and technical"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.hideKeyboard()
-        industryPicker.isHidden = true;
-        // Do any additional setup after loading the view.
+        self.hideKeyboard()
+        industryPicker.isHidden = true
+        self.industryPicker.delegate = self
+        self.industryPicker.dataSource = self
+        
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    
-    /* funtions for picker view*/
-    // returns the number of 'columns' to display.
-    func numberOfComponentsInPickerView(pickerView: UIPickerView!) -> Int{
-        return 1
+    @IBAction func startEnterPrevOcc(_ sender: UITextField) {
+        industryPicker.isHidden = false
+        print("--------- Test ---------")
     }
     
-    // returns the # of rows in each component..
-    func pickerView(pickerView: UIPickerView!, numberOfRowsInComponent component: Int) -> Int{
+}
+
+extension ProfileViewController: UIPickerViewDelegate, UIPickerViewDataSource{
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1;
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return industries.count
     }
-    
-    func pickerView(pickerView: UIPickerView!, titleForRow row: Int, forComponent component: Int) -> String! {
+
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return industries[row]
     }
-    
-    func pickerView(pickerView: UIPickerView!, didSelectRow row: Int, inComponent component: Int)
-    {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         prevOcc.text = industries[row]
-        industryPicker.isHidden = true;
+        industryPicker.isHidden = true
     }
-    
-    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
-        industryPicker.isHidden = false
-        return false
-    }
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
 extension UIViewController
 {
     func hideKeyboard()
@@ -91,4 +77,6 @@ extension UIViewController
     {
         view.endEditing(true)
     }
+    
 }
+
