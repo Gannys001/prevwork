@@ -38,20 +38,28 @@ extension RecoveryViewController: UICollectionViewDelegate, UICollectionViewData
             switch indexPath.row {
                 case 0:
                     cell.button.setTitle("Lower Back Pain", for: .normal);
+                    cell.image.image = UIImage(named: "lowerback");
                 case 1:
                     cell.button.setTitle("Sprains", for: .normal);
+                    cell.image.image = UIImage(named: "sprains");
                 case 2:
                     cell.button.setTitle("Amputations", for: .normal);
+                    cell.image.image = UIImage(named: "amputation");
                 case 3:
                     cell.button.setTitle("Cuts, lacerations, punctures", for: .normal);
+                    cell.image.image = UIImage(named: "cuts");
                 case 4:
                     cell.button.setTitle("Bruises", for: .normal);
+                    cell.image.image = UIImage(named: "bruises");
                 case 5:
                     cell.button.setTitle("Chemical burns", for: .normal);
+                    cell.image.image = UIImage(named: "chemical");
                 case 6:
                     cell.button.setTitle("Heat burns", for: .normal);
+                    cell.image.image = UIImage(named: "heartburn");
                 case 7:
                     cell.button.setTitle("Mutiple traumatic injuries", for: .normal);
+                cell.image.image = UIImage(named: "multipleinjury");
                 case 8:
                     cell.button.setTitle("Soreness", for: .normal);
                 case 9:

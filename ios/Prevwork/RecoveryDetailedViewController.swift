@@ -18,7 +18,7 @@ class RecoveryDetailedViewController: UIViewController{
     
     // declared the desired value
     var desiredLabelValue: String!
-    var infoArray:[String] = ["Acute low back pain – Most patients with acute low back pain (less than four weeks) improve regardless of specific management. We typically suggest nonpharmacologic therapy with superficial heat and continued activity. Bed rest is not advised. \n Subacute low back pain – For patients with subacute low back pain (lasting between 4 and 12 weeks), short-term interventions such as superficial heat, massage, exercise therapy (often with physical therapy), spinal manipulation, or acupuncture are reasonable. As with patients with acute back pain, we suggest patients with subacute low back pain remain active as well."]
+    var infoArray:[String] = ["Acute low back pain \n – Most patients with acute low back pain (less than four weeks) improve regardless of specific management. We typically suggest nonpharmacologic therapy with superficial heat and continued activity. Bed rest is not advised. \n Subacute low back pain – For patients with subacute low back pain (lasting between 4 and 12 weeks), short-term interventions such as superficial heat, massage, exercise therapy (often with physical therapy), spinal manipulation, or acupuncture are reasonable. As with patients with acute back pain, we suggest patients with subacute low back pain remain active as well."]
 
     var imageArray:[String] = ["walk-icon.jpg", "aero.png", "yoga.png"]
     
@@ -44,9 +44,9 @@ class RecoveryDetailedViewController: UIViewController{
     }
     
     // Open External Link
-    @IBAction func gotoOsha(_ sender: Any) {
+    @IBAction func gotoOsaaha(_ sender: Any) {
         // open the external link
-        if let url = NSURL(string: "https://www.osha.gov/OSHA_FAQs.html#collapse93"){
+        if let url = NSURL(string: "https://prevworks.com/"){
             UIApplication.shared.openURL(url as URL)
         }
     }
