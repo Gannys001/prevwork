@@ -18,6 +18,7 @@
 		EA1C24F9223196350075B4C2 /* StateIndustryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1C24F8223196350075B4C2 /* StateIndustryViewController.swift */; };
 		EA1C24FB22319DFE0075B4C2 /* StateDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1C24FA22319DFE0075B4C2 /* StateDetailedViewController.swift */; };
 		EA77D2A622277D99007E9AEE /* mapinteractive.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA77D2A522277D99007E9AEE /* mapinteractive.jpg */; };
+		EA81C3C8224479C900CFCC29 /* RiskResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81C3C7224479C900CFCC29 /* RiskResultViewController.swift */; };
 		EA82202C221B4F8B00CE07C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82202B221B4F8B00CE07C9 /* AppDelegate.swift */; };
 		EA82202E221B4F8B00CE07C9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82202D221B4F8B00CE07C9 /* FirstViewController.swift */; };
 		EA822030221B4F8B00CE07C9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82202F221B4F8B00CE07C9 /* SecondViewController.swift */; };
@@ -61,6 +62,7 @@
 		EA1C24F8223196350075B4C2 /* StateIndustryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateIndustryViewController.swift; sourceTree = "<group>"; };
 		EA1C24FA22319DFE0075B4C2 /* StateDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailedViewController.swift; sourceTree = "<group>"; };
 		EA77D2A522277D99007E9AEE /* mapinteractive.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mapinteractive.jpg; sourceTree = "<group>"; };
+		EA81C3C7224479C900CFCC29 /* RiskResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskResultViewController.swift; sourceTree = "<group>"; };
 		EA822028221B4F8B00CE07C9 /* Prevwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prevwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA82202B221B4F8B00CE07C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA82202D221B4F8B00CE07C9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				2AAE161F2228AC4B00E88F02 /* ProfileViewController.swift */,
 				EA82202F221B4F8B00CE07C9 /* SecondViewController.swift */,
 				EA822031221B4F8B00CE07C9 /* Main.storyboard */,
+				EA81C3C7224479C900CFCC29 /* RiskResultViewController.swift */,
 				EA1C24FA22319DFE0075B4C2 /* StateDetailedViewController.swift */,
 				EA1C24F8223196350075B4C2 /* StateIndustryViewController.swift */,
 				EA1C24F622318FF60075B4C2 /* MainViewController.swift */,
@@ -321,6 +324,7 @@
 				EA0CFABF22267F4000093E38 /* PreventiveMethodTableViewCell.swift in Sources */,
 				2AAE16202228AC4B00E88F02 /* ProfileViewController.swift in Sources */,
 				EA82202E221B4F8B00CE07C9 /* FirstViewController.swift in Sources */,
+				EA81C3C8224479C900CFCC29 /* RiskResultViewController.swift in Sources */,
 				EAB54402222D03D9008AFF98 /* IndustryCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

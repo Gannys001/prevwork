@@ -14,11 +14,11 @@ class RecoveryDetailedViewController: UIViewController{
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var detailedText: UITextView!
     @IBOutlet weak var RecoveryImage2: UIImageView!
-    @IBOutlet weak var URL: UILabel!
+    @IBOutlet weak var RecoveryTime: UITextView!
     
     // declared the desired value
     var desiredLabelValue: String!
-    var infoArray:[String] = ["Acute low back pain \n – Most patients with acute low back pain (less than four weeks) improve regardless of specific management. We typically suggest nonpharmacologic therapy with superficial heat and continued activity. Bed rest is not advised. \n Subacute low back pain – For patients with subacute low back pain (lasting between 4 and 12 weeks), short-term interventions such as superficial heat, massage, exercise therapy (often with physical therapy), spinal manipulation, or acupuncture are reasonable. As with patients with acute back pain, we suggest patients with subacute low back pain remain active as well."]
+    var infoArray:[String] = ["-- nonpharmacologic therapy with superficial heat and continued activity. \n --superficial heat, massage, exercise therapy (often with physical therapy), spinal manipulation, or acupuncture are reasonable. \n --Bed rest is not advised."]
 
     var imageArray:[String] = ["walk-icon.jpg", "aero.png", "yoga.png"]
     
@@ -31,8 +31,8 @@ class RecoveryDetailedViewController: UIViewController{
         
         // track the desired label
         if(desiredLabelValue == "Lower Back Pain"){
+            RecoveryTime.text = "4 weeks";
             detailedText.text = infoArray[0];
-            
             var imageName = imageArray[0]
             var image = UIImage(named: imageName)
             RecoveryImage1.image = image
