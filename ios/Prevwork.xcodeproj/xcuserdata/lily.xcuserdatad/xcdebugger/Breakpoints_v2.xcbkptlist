@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Prevwork/ProfileEditorViewController.swift"
+            timestampString = "574888158.290154"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Prevwork/ProfileEditorViewController.swift"
+            timestampString = "574888158.290637"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "ProfileEditorViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Prevwork.ProfileEditorViewController.(industryPicker in _F31287C77525FF0AF2920655788EA493).getter : Swift.Optional&lt;__C.UIPickerView&gt;"
+                  moduleName = "Prevwork"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lily/Documents/prevwork/ios/Prevwork/ProfileEditorViewController.swift"
+                  timestampString = "574886828.0965461"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Prevwork.ProfileEditorViewController.(industryPicker in _F31287C77525FF0AF2920655788EA493).setter : Swift.Optional&lt;__C.UIPickerView&gt;"
+                  moduleName = "Prevwork"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lily/Documents/prevwork/ios/Prevwork/ProfileEditorViewController.swift"
+                  timestampString = "574886828.099386"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Prevwork.ProfileEditorViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Prevwork.ProfileEditorViewController"
+                  moduleName = "Prevwork"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lily/Documents/prevwork/ios/Prevwork/ProfileEditorViewController.swift"
+                  timestampString = "574886828.1016361"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "571">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Prevwork.ProfileEditorViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Prevwork.ProfileEditorViewController&gt;"
+                  moduleName = "Prevwork"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lily/Documents/prevwork/ios/Prevwork/ProfileEditorViewController.swift"
+                  timestampString = "574886828.103933"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "542">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Prevwork/ProfileEditorViewController.swift"
+            timestampString = "574888158.290941"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Prevwork/ProfileEditorViewController.swift"
+            timestampString = "574888158.291307"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "ProfileEditorViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Prevwork.ProfileEditorViewController.(locationPicker in _F31287C77525FF0AF2920655788EA493).getter : Swift.Optional&lt;__C.UIPickerView&gt;"
+                  moduleName = "Prevwork"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lily/Documents/prevwork/ios/Prevwork/ProfileEditorViewController.swift"
+                  timestampString = "574886826.454065"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Prevwork.ProfileEditorViewController.(locationPicker in _F31287C77525FF0AF2920655788EA493).setter : Swift.Optional&lt;__C.UIPickerView&gt;"
+                  moduleName = "Prevwork"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lily/Documents/prevwork/ios/Prevwork/ProfileEditorViewController.swift"
+                  timestampString = "574886826.456741"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Prevwork.ProfileEditorViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Prevwork.ProfileEditorViewController"
+                  moduleName = "Prevwork"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lily/Documents/prevwork/ios/Prevwork/ProfileEditorViewController.swift"
+                  timestampString = "574886826.4588391"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "656">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Prevwork.ProfileEditorViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Prevwork.ProfileEditorViewController&gt;"
+                  moduleName = "Prevwork"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lily/Documents/prevwork/ios/Prevwork/ProfileEditorViewController.swift"
+                  timestampString = "574886826.4609669"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "627">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

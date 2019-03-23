@@ -17,6 +17,10 @@ class ProfileViewController: UIViewController{
     
     @IBOutlet weak var industryPicker: UIPickerView!
     
+    
+    @IBAction func checkBox1(_ sender: UIButton) {
+    }
+    
     @IBOutlet weak var prevOcc: UITextField!
     @IBOutlet weak var curOcc: UITextField!
     
