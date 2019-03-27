@@ -62,7 +62,7 @@
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Jh6-7G-3XT"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="FFJ-zt-Su6" userLabel="Risk Calculator"/>
+                    <tabBarItem key="tabBarItem" title="calculator" selectedImage="calculator" id="FFJ-zt-Su6" userLabel="Risk Calculator"/>
                     <navigationItem key="navigationItem" title="Risk Calculator" id="Eho-Ad-FDs"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -358,7 +358,7 @@
         <scene sceneID="tD2-4g-thg">
             <objects>
                 <navigationController id="s2D-rM-6sY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Main" id="7h6-BN-rzF"/>
+                    <tabBarItem key="tabBarItem" title="Main" image="home-small" id="7h6-BN-rzF"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7G7-mD-WaD">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -486,6 +486,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="i6q-3h-sRL"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="2po-sK-0NS"/>
                     <navigationItem key="navigationItem" id="9Pf-DQ-gOC"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -637,7 +638,7 @@
         <scene sceneID="Z7R-1K-hKy">
             <objects>
                 <navigationController id="T44-QW-1bM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Recovery Info" id="X8F-z8-Kd3"/>
+                    <tabBarItem key="tabBarItem" title="Recovery Info" image="heart-small" id="X8F-z8-Kd3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HpL-ER-SPX">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -678,7 +679,7 @@
         <scene sceneID="nD4-By-Guy">
             <objects>
                 <navigationController id="abf-rB-Xbd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Calculator" id="X3V-gi-71l"/>
+                    <tabBarItem key="tabBarItem" title="Calculator" image="calculator-small" id="X3V-gi-71l"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4DK-U6-k7d">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -695,7 +696,7 @@
         <scene sceneID="KSA-Jx-BWs">
             <objects>
                 <navigationController id="EhE-Vn-4Tp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Preventative" id="lhD-J4-235"/>
+                    <tabBarItem key="tabBarItem" title="Preventative" image="strong" id="lhD-J4-235"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uQz-Qz-c8R">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -1008,7 +1009,7 @@
         <scene sceneID="tw3-FX-ajS">
             <objects>
                 <navigationController id="5K3-vM-FnO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="gPG-MW-CJA"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="user-small" id="gPG-MW-CJA"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OBr-AG-ecT">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -1241,13 +1242,18 @@
         <image name="PrevWorks_Logo" width="288" height="98"/>
         <image name="background" width="1302.857177734375" height="822.85711669921875"/>
         <image name="body" width="564" height="470"/>
+        <image name="calculator" width="37.5" height="37.5"/>
+        <image name="calculator-small" width="18.75" height="18.75"/>
         <image name="default-user" width="225" height="225"/>
+        <image name="heart-small" width="18.75" height="18.75"/>
+        <image name="home-small" width="18.75" height="18.75"/>
         <image name="loginBGCard" width="367" height="477"/>
+        <image name="strong" width="18.75" height="18.75"/>
+        <image name="user-small" width="18.75" height="18.75"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uvl-Oj-yXz"/>
-        <segue reference="VG1-de-tNg"/>
-        <segue reference="V9T-nw-DsG"/>
+        <segue reference="4yg-yo-PZK"/>
+        <segue reference="dYZ-A6-YLO"/>
         <segue reference="lr9-rI-FfB"/>
         <segue reference="AI5-FF-ynm"/>
     </inferredMetricsTieBreakers>
