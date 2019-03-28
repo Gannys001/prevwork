@@ -17,6 +17,8 @@
 		EA1C24F722318FF60075B4C2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1C24F622318FF60075B4C2 /* MainViewController.swift */; };
 		EA1C24F9223196350075B4C2 /* StateIndustryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1C24F8223196350075B4C2 /* StateIndustryViewController.swift */; };
 		EA1C24FB22319DFE0075B4C2 /* StateDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1C24FA22319DFE0075B4C2 /* StateDetailedViewController.swift */; };
+		EA581601224C13A600E6DCDF /* PurchasePackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA581600224C13A600E6DCDF /* PurchasePackageViewController.swift */; };
+		EA581603224C29F200E6DCDF /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA581602224C29F200E6DCDF /* PopUpViewController.swift */; };
 		EA77D2A622277D99007E9AEE /* mapinteractive.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA77D2A522277D99007E9AEE /* mapinteractive.jpg */; };
 		EA81C3C8224479C900CFCC29 /* RiskResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81C3C7224479C900CFCC29 /* RiskResultViewController.swift */; };
 		EA82202C221B4F8B00CE07C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82202B221B4F8B00CE07C9 /* AppDelegate.swift */; };
@@ -61,6 +63,8 @@
 		EA1C24F622318FF60075B4C2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EA1C24F8223196350075B4C2 /* StateIndustryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateIndustryViewController.swift; sourceTree = "<group>"; };
 		EA1C24FA22319DFE0075B4C2 /* StateDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailedViewController.swift; sourceTree = "<group>"; };
+		EA581600224C13A600E6DCDF /* PurchasePackageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePackageViewController.swift; sourceTree = "<group>"; };
+		EA581602224C29F200E6DCDF /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		EA77D2A522277D99007E9AEE /* mapinteractive.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mapinteractive.jpg; sourceTree = "<group>"; };
 		EA81C3C7224479C900CFCC29 /* RiskResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskResultViewController.swift; sourceTree = "<group>"; };
 		EA822028221B4F8B00CE07C9 /* Prevwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prevwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +142,8 @@
 				2AAE161F2228AC4B00E88F02 /* ProfileViewController.swift */,
 				EA82202F221B4F8B00CE07C9 /* SecondViewController.swift */,
 				EA822031221B4F8B00CE07C9 /* Main.storyboard */,
+				EA581600224C13A600E6DCDF /* PurchasePackageViewController.swift */,
+				EA581602224C29F200E6DCDF /* PopUpViewController.swift */,
 				EA81C3C7224479C900CFCC29 /* RiskResultViewController.swift */,
 				EA1C24FA22319DFE0075B4C2 /* StateDetailedViewController.swift */,
 				EA1C24F8223196350075B4C2 /* StateIndustryViewController.swift */,
@@ -311,6 +317,7 @@
 				EA0CFAC12226800B00093E38 /* FourthViewController.swift in Sources */,
 				EA822030221B4F8B00CE07C9 /* SecondViewController.swift in Sources */,
 				EAB54400222D004F008AFF98 /* CollectionViewCell.swift in Sources */,
+				EA581601224C13A600E6DCDF /* PurchasePackageViewController.swift in Sources */,
 				EA1C24FB22319DFE0075B4C2 /* StateDetailedViewController.swift in Sources */,
 				EA0CFAC32226804B00093E38 /* PreventClass.swift in Sources */,
 				EA9D8F132228D9FA00EE41B5 /* PreventDetailedViewController.swift in Sources */,
@@ -322,6 +329,7 @@
 				EA1C24F9223196350075B4C2 /* StateIndustryViewController.swift in Sources */,
 				EAD91A262229C1FC0027A58C /* RecoveryViewController.swift in Sources */,
 				EA0CFABF22267F4000093E38 /* PreventiveMethodTableViewCell.swift in Sources */,
+				EA581603224C29F200E6DCDF /* PopUpViewController.swift in Sources */,
 				2AAE16202228AC4B00E88F02 /* ProfileViewController.swift in Sources */,
 				EA82202E221B4F8B00CE07C9 /* FirstViewController.swift in Sources */,
 				EA81C3C8224479C900CFCC29 /* RiskResultViewController.swift in Sources */,
