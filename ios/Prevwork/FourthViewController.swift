@@ -11,7 +11,7 @@ import UIKit
 // preventive method dview controller
 class FourthViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let devCourses = [("BackPain"),("MusclePain"),("Headache"),("xxxx"),("xxxx")]
+    let devCourses = [("BackPain"),("Soreness"),("Wrist"),("Arm"),("Legs"),("Hip")]
     
 
     @IBOutlet weak var tableView: UITableView!
@@ -56,7 +56,7 @@ class FourthViewController: UIViewController, UITableViewDataSource, UITableView
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        // Pass the pselected object to the new view controller.
     }
     */
 

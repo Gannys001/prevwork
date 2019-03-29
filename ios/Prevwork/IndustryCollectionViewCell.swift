@@ -11,4 +11,6 @@ import UIKit
 class IndustryCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var image: UIImageView!
+    
 }
