@@ -15,6 +15,8 @@ class ProfileEditorViewController: UIViewController, UIPickerViewDelegate, UIPic
     @IBOutlet weak var sizeTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var industryTextField: UITextField!
+    @IBOutlet weak var companyTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     
     private var datePicker: UIPickerView!
@@ -29,7 +31,12 @@ class ProfileEditorViewController: UIViewController, UIPickerViewDelegate, UIPic
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        let standard = UserDefaults.standard
+        birthdayTextField.text = standard.string(forKey: "founded")
+        sizeTextField.text = standard.string(forKey: "size")
+        locationTextField.text = standard.string(forKey: "location")
+        industryTextField.text = standard.string(forKey: "industry")
+        passwordTextField.text = standard.string(forKey: "password")
 
         // Do any additional setup after loading the view.
 //        datePicker = UIDatePicker()
@@ -123,6 +130,56 @@ class ProfileEditorViewController: UIViewController, UIPickerViewDelegate, UIPic
             locationTextField.text = locationOptions[row]
         } else{
             sizeTextField.text = sizeOptions[row]
+        }
+    }
+    
+    
+    @IBAction func updateProfile(_ sender: Any) {
+        
+        let standard = UserDefaults.standard
+        
+        if (companyTextField?.text == nil || passwordTextField.text == nil || industryTextField.text == nil || sizeTextField.text == nil || birthdayTextField.text == nil || locationTextField.text == nil){
+            
+        } else{
+            let params = ["username": UserDefaults.standard.string(forKey: "username"),  "companyName": companyTextField.text, "password": passwordTextField.text, "industry": industryTextField.text, "size": sizeTextField.text, "founded": birthdayTextField.text, "location": locationTextField.text]
+            guard let jsonData = try? JSONSerialization.data(withJSONObject: params, options: []) else { return }
+            
+            guard let url = URL(string: "http://127.0.0.1:3008/updateProfile") else {return}
+            var request = URLRequest(url: url)
+            request.httpMethod = "POST"
+            request.httpBody = jsonData
+            var headers = request.allHTTPHeaderFields ?? [:]
+            headers["Content-Type"] = "application/json"
+            request.allHTTPHeaderFields = headers
+            print("HttpBody!!!!!!")
+            print(String(data: request.httpBody!, encoding: String.Encoding.utf8)!)
+            let config = URLSessionConfiguration.default
+            let session = URLSession(configuration: config)
+            
+            session.dataTask(with: request) { (data, res, err) in
+                if let res = res as? HTTPURLResponse {
+                    if (res.statusCode == 404) {
+                        // update failed
+                        print("update failed")
+                    }
+                    
+                    else {
+                        // update successful
+                        print("update profile successful")
+                        
+                        standard.set(params["username"], forKey: "username")
+                        standard.set(params["password"], forKey: "password")
+                        standard.set(params["companyName"], forKey: "companyName")
+                        standard.set(params["industry"], forKey: "industry")
+                        standard.set(params["founded"], forKey: "founded")
+                        standard.set(params["location"], forKey: "location")
+                        
+                        
+                    }
+                }
+            }.resume()
+            
+            
         }
     }
     

@@ -10,6 +10,15 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var companyTextField: UILabel!
+    @IBOutlet weak var usernameTextField: UILabel!
+    @IBOutlet weak var industryTextField: UILabel!
+    @IBOutlet weak var sizeTextField: UILabel!
+    @IBOutlet weak var locationTextField: UILabel!
+    @IBOutlet weak var foundedTextField: UILabel!
+    
+    
+    
     @IBOutlet weak var profileImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +26,15 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
         profileImage.layer.borderColor = UIColor.white.cgColor;
         profileImage.layer.borderWidth = 10;
+        
+        let standard = UserDefaults.standard
+        
+        usernameTextField.text = standard.string(forKey: "username")
+        industryTextField.text = standard.string(forKey: "industry")
+        sizeTextField.text = standard.string(forKey: "size")
+        locationTextField.text = standard.string(forKey: "location")
+        foundedTextField.text = standard.string(forKey: "founded")
+        companyTextField.text = standard.string(forKey: "companyName")
         
     }
     
