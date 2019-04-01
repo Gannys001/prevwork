@@ -20,6 +20,7 @@ class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     var age = ["10-20", "20-30", "30-40"];
     var sex = ["Male", "Female"];
     var occupation = ["Construction", "Health"];
+    var desiredBodyPart: Int!
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1;
