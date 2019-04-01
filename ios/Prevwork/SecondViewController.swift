@@ -10,6 +10,7 @@ import UIKit
 
 class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource, UITextFieldDelegate {
     
+    @IBOutlet weak var bodyPart: UILabel!
     @IBOutlet weak var SexTex: UITextField!
     @IBOutlet weak var AgeTex: UITextField!
     @IBOutlet weak var OccupTex: UITextField!
@@ -21,6 +22,8 @@ class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     var sex = ["Male", "Female"];
     var occupation = ["Construction", "Health"];
     var desiredBodyPart: Int!
+    var desiredBodyPartArray = ["Face", "Neck", "Thyroid", "Left Breast", "Right Breast", "Spleen", "Liver", "Stomach", "Abdomen", "Pelvis", "Genitals","Thighs","Legs", "Arms", "Feet", "Arms", "Back of Head", "Nape", "Upper Back", "Middle Back",
+    "Lower Back", "Back of thighs", "calves", "feet"];
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1;
@@ -93,7 +96,8 @@ class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        bodyPart.text =  desiredBodyPartArray[desiredBodyPart + 1]
     }
 
 

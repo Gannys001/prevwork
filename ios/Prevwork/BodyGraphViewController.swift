@@ -25,8 +25,6 @@ class BodyGraphViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
     
 
@@ -39,6 +37,7 @@ class BodyGraphViewController: UIViewController {
         buttonConfirm.isHidden = false
         detailedinfo.isHidden = false
         detailedinfo.text = "You want to know more about middle back?";
+        selected = 18;
     }
     
     @IBAction func button17Selected(_ sender: Any) {
@@ -50,6 +49,7 @@ class BodyGraphViewController: UIViewController {
         buttonConfirm.isHidden = false
         detailedinfo.isHidden = false
         detailedinfo.text = "You want to know more about upper back?";
+        selected = 17;
     }
     
     @IBAction func button19Selected(_ sender: Any) {
@@ -61,6 +61,7 @@ class BodyGraphViewController: UIViewController {
         buttonConfirm.isHidden = false
         detailedinfo.isHidden = false
         detailedinfo.text = "You want to know more about lower back?";
+        selected = 19;
     }
     
     @IBAction func cancelClicked(_ sender: Any) {
