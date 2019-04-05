@@ -37,6 +37,7 @@ class ProfileEditorViewController: UIViewController, UIPickerViewDelegate, UIPic
         locationTextField.text = standard.string(forKey: "location")
         industryTextField.text = standard.string(forKey: "industry")
         passwordTextField.text = standard.string(forKey: "password")
+        companyTextField.text = standard.string(forKey: "companyName")
 
         // Do any additional setup after loading the view.
 //        datePicker = UIDatePicker()
@@ -167,12 +168,21 @@ class ProfileEditorViewController: UIViewController, UIPickerViewDelegate, UIPic
                         // update successful
                         print("update profile successful")
                         
-                        standard.set(params["username"], forKey: "username")
-                        standard.set(params["password"], forKey: "password")
-                        standard.set(params["companyName"], forKey: "companyName")
-                        standard.set(params["industry"], forKey: "industry")
-                        standard.set(params["founded"], forKey: "founded")
-                        standard.set(params["location"], forKey: "location")
+                        standard.set(params["username"]!, forKey: "username")
+                        standard.set(params["password"]!, forKey: "password")
+                        standard.set(params["companyName"]!, forKey: "companyName")
+                        standard.set(params["industry"]!, forKey: "industry")
+                        standard.set(params["founded"]!, forKey: "founded")
+                        standard.set(params["location"]!, forKey: "location")
+                        standard.set(params["size"], forKey: "size")
+                        print(standard.string(forKey: "industry"))
+                        print("editor")
+                        DispatchQueue.main.async {
+                            self.performSegue(withIdentifier: "showProfile", sender: self)
+                        }
+                        
+                       
+                        
                         
                         
                     }

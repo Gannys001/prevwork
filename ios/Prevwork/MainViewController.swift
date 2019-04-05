@@ -31,6 +31,11 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         stateOption = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID"]
+        
+        let standard = UserDefaults.standard
+        if (standard.object(forKey: "loggedin") == nil || standard.bool(forKey: "loggedin") == false) {
+            self.performSegue(withIdentifier: "showSignin", sender: self)
+        }
     }
 
     //send the title of the current story board

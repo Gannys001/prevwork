@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0DF3F5224ED91800121A5A /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0DF3F4224ED91800121A5A /* SigninViewController.swift */; };
+		2A4BD4022256E147008A3D8B /* TherapyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BD4012256E147008A3D8B /* TherapyViewController.swift */; };
 		2AAE161C221E07F400E88F02 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE161B221E07F400E88F02 /* LoginTextField.swift */; };
 		2AAE16202228AC4B00E88F02 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE161F2228AC4B00E88F02 /* ProfileViewController.swift */; };
 		2AAE16222228BF3E00E88F02 /* ProfileEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE16212228BF3E00E88F02 /* ProfileEditorViewController.swift */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0DF3F4224ED91800121A5A /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		2A4BD4012256E147008A3D8B /* TherapyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapyViewController.swift; sourceTree = "<group>"; };
 		2AAE161B221E07F400E88F02 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		2AAE161F2228AC4B00E88F02 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2AAE16212228BF3E00E88F02 /* ProfileEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 		EA82202A221B4F8B00CE07C9 /* Prevwork */ = {
 			isa = PBXGroup;
 			children = (
+				2A0DF3F4224ED91800121A5A /* SigninViewController.swift */,
 				2AAE161B221E07F400E88F02 /* LoginTextField.swift */,
 				EA77D2A522277D99007E9AEE /* mapinteractive.jpg */,
 				EA82202B221B4F8B00CE07C9 /* AppDelegate.swift */,
@@ -142,6 +147,7 @@
 				2AAE161F2228AC4B00E88F02 /* ProfileViewController.swift */,
 				EA82202F221B4F8B00CE07C9 /* SecondViewController.swift */,
 				EA822031221B4F8B00CE07C9 /* Main.storyboard */,
+				2A4BD4012256E147008A3D8B /* TherapyViewController.swift */,
 				EA581600224C13A600E6DCDF /* PurchasePackageViewController.swift */,
 				EA581602224C29F200E6DCDF /* PopUpViewController.swift */,
 				EA81C3C7224479C900CFCC29 /* RiskResultViewController.swift */,
@@ -314,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4BD4022256E147008A3D8B /* TherapyViewController.swift in Sources */,
 				EA0CFAC12226800B00093E38 /* FourthViewController.swift in Sources */,
 				EA822030221B4F8B00CE07C9 /* SecondViewController.swift in Sources */,
 				EAB54400222D004F008AFF98 /* CollectionViewCell.swift in Sources */,
@@ -328,6 +335,7 @@
 				EA1C24F722318FF60075B4C2 /* MainViewController.swift in Sources */,
 				EA1C24F9223196350075B4C2 /* StateIndustryViewController.swift in Sources */,
 				EAD91A262229C1FC0027A58C /* RecoveryViewController.swift in Sources */,
+				2A0DF3F5224ED91800121A5A /* SigninViewController.swift in Sources */,
 				EA0CFABF22267F4000093E38 /* PreventiveMethodTableViewCell.swift in Sources */,
 				EA581603224C29F200E6DCDF /* PopUpViewController.swift in Sources */,
 				2AAE16202228AC4B00E88F02 /* ProfileViewController.swift in Sources */,

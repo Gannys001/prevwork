@@ -10,18 +10,19 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
-    @IBOutlet weak var companyTextField: UILabel!
-    @IBOutlet weak var usernameTextField: UILabel!
     @IBOutlet weak var industryTextField: UILabel!
     @IBOutlet weak var sizeTextField: UILabel!
     @IBOutlet weak var locationTextField: UILabel!
     @IBOutlet weak var foundedTextField: UILabel!
+    @IBOutlet weak var companyTextField: UILabel!
+    @IBOutlet weak var usernameTextField: UILabel!
     
     
     
     @IBOutlet weak var profileImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         // Do any additional setup after loading the view.
         profileImage.layer.borderColor = UIColor.white.cgColor;
@@ -35,6 +36,9 @@ class ProfileViewController: UIViewController {
         locationTextField.text = standard.string(forKey: "location")
         foundedTextField.text = standard.string(forKey: "founded")
         companyTextField.text = standard.string(forKey: "companyName")
+        print("Profile")
+        print(standard.string(forKey: "username")!)
+        print(standard.string(forKey: "industry")!)
         
     }
     
@@ -48,5 +52,11 @@ class ProfileViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+    @IBAction func SignOut(_ sender: Any) {
+        UserDefaults.standard.set(false, forKey: "loggedin")
+        self.performSegue(withIdentifier: "showHome", sender: self)
+    }
+    
 }

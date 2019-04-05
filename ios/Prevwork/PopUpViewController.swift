@@ -30,18 +30,36 @@ class PopUpViewController: UIViewController {
         platinumButton.isSelected = false;
         silverButton.isSelected = false;
         goldButton.isSelected = true;
+        let alert = UIAlertController(title: "Gold Package", message: "One acupuncture\nOne chiropractic\nOne physical therapy", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Learn More", style: UIAlertAction.Style.default, handler: { (alert: UIAlertAction!) in
+            self.performSegue(withIdentifier: "showDetail", sender: sender)
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func platinumChose(_ sender: Any) {
         platinumButton.isSelected = true;
         silverButton.isSelected = false;
         goldButton.isSelected = false;
+        let alert = UIAlertController(title: "Platinum Package", message: "One physical therapy only", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Learn More", style: UIAlertAction.Style.default, handler: { (alert: UIAlertAction!) in
+            self.performSegue(withIdentifier: "showDetail", sender: sender)
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func silverChose(_ sender: Any) {
         silverButton.isSelected = true;
         platinumButton.isSelected = false;
         goldButton.isSelected = false;
+        let alert = UIAlertController(title: "Silver Package", message: "One chiropractic\nOne physical therapy", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Learn More", style: UIAlertAction.Style.default, handler: { (alert: UIAlertAction!) in
+            self.performSegue(withIdentifier: "showDetail", sender: sender)
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func purchase(_ sender: Any) {
