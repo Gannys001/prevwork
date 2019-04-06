@@ -104,7 +104,6 @@ class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let vc = segue.destination as! RiskResultViewController
-        
         print([SexPick.selectedRow(inComponent: 0)])
         if(sex[SexPick.selectedRow(inComponent: 0)] == "Male"){
             vc.gender = 0;
