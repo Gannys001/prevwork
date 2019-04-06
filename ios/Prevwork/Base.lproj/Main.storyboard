@@ -336,14 +336,14 @@
                                 <rect key="frame" x="194" y="242" width="146" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Preventative Therapy">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="3au-1k-nwG" kind="show" id="A7a-0z-tNa"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preventive Method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pst-nR-PV9">
-                                <rect key="frame" x="24" y="88" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
@@ -364,7 +364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uC-pv-AJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="2273.6453201970444"/>
+            <point key="canvasLocation" x="379.71014492753625" y="2273.4375"/>
         </scene>
         <!--Purchase Package View Controller-->
         <scene sceneID="TY2-1k-CXf">
@@ -1674,7 +1674,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="agW-SH-rqz"/>
-        <segue reference="dYZ-A6-YLO"/>
+        <segue reference="V9T-nw-DsG"/>
         <segue reference="lr9-rI-FfB"/>
         <segue reference="gGc-Lr-9Dh"/>
     </inferredMetricsTieBreakers>
