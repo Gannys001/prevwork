@@ -568,7 +568,6 @@
         <!--Item-->
         <scene sceneID="QNm-Xl-CTQ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6h1-cW-3Nv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="uJD-Az-70r" customClass="StateDetailedViewController" customModule="Prevwork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Apu-JE-MXH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -628,6 +627,7 @@
                         <outlet property="stateLabel" destination="ibF-6r-geA" id="QSa-sv-YVy"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6h1-cW-3Nv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1215.2" y="-1532.5123152709359"/>
         </scene>
@@ -1050,7 +1050,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Y8D-4a-PE2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kZe-d3-hwp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="9ge-6r-s89" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JO8-kT-K9W">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1060,6 +1059,7 @@
                         <segue destination="BNv-4e-Zex" kind="relationship" relationship="rootViewController" id="vbn-D3-Hll"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZe-d3-hwp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="667" y="-1564"/>
         </scene>
