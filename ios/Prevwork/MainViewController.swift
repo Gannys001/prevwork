@@ -31,6 +31,15 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         stateOption = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID"]
+        
+        let standard = UserDefaults.standard
+        print(standard.bool(forKey: "loggedin"))
+        if (standard.object(forKey: "loggedin") == nil || standard.bool(forKey: "loggedin") == false) {
+            var root: UIViewController?
+            root = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "signin")
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.window?.rootViewController = root
+        }
     }
 
     //send the title of the current story board

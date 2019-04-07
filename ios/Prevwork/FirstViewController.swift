@@ -92,13 +92,13 @@ class FirstViewController: UIViewController {
         print(success)
         if (success){
             
-            let profile = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileEditorViewController") as! ProfileEditorViewController
-            self.addChild(profile)
-            profile.view.frame = self.view.frame
-            self.view.addSubview(profile.view)
-            profile.didMove(toParent: self)
 //            let profile = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileEditorViewController") as! ProfileEditorViewController
-//            self.navigationController?.pushViewController(profile, animated: true)
+//            self.addChild(profile)
+//            profile.view.frame = self.view.frame
+//            self.view.addSubview(profile.view)
+//            profile.didMove(toParent: self)
+            self.performSegue(withIdentifier: "showSignin", sender: self)
+
         }
     }
     

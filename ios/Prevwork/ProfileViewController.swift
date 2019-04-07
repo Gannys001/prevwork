@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController {
 
     @IBOutlet weak var companyTextField: UILabel!
     @IBOutlet weak var usernameTextField: UILabel!
+    
     @IBOutlet weak var industryTextField: UILabel!
     @IBOutlet weak var sizeTextField: UILabel!
     @IBOutlet weak var locationTextField: UILabel!
@@ -48,5 +49,16 @@ class ProfileViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    @IBAction func signOut(_ sender: Any) {
+        
+        UserDefaults.standard.set(false, forKey: "loggedin")
+        var root: UIViewController?
+        root = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "signin")
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window?.rootViewController = root
+    }
+    
 
 }
