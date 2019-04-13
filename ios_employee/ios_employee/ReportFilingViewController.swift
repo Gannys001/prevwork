@@ -11,7 +11,7 @@ import UIKit
 class ReportFilingViewController: UIViewController {
 
     @IBOutlet weak var homeCheckBox: UIButton!
-    
+    var prop1 = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         homeCheckBox.setImage(UIImage(named:"Checkmarkempty"), for: .normal)

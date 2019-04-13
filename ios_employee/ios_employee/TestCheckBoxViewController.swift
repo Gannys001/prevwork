@@ -33,7 +33,12 @@ class TestCheckBoxViewController: UIViewController {
         finger6.setImage(UIImage(named:"Checkmarkempty"), for: .normal)
         finger6.setImage(UIImage(named:"Checkmark"), for: .selected)
         
-        btnCheckBox.alpha = 0.1;
+        btnCheckBox.alpha = 0.1
+        finger2.alpha = 0.1
+        finger3.alpha = 0.1
+        finger4.alpha = 0.1
+        finger5.alpha = 0.1
+        finger6.alpha = 0.1
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,10 +59,10 @@ class TestCheckBoxViewController: UIViewController {
                 print(self.btnCheckBox.alpha)
                 if sender.alpha < 0.2{
                     print("---------- Change alpha ----------")
-                    self.btnCheckBox.alpha = 1
+                    sender.alpha = 1
                 }
                 else{
-                    self.btnCheckBox.alpha = 0.1
+                    sender.alpha = 0.1
                 }
             }, completion: nil)
         }
@@ -94,6 +99,13 @@ class TestCheckBoxViewController: UIViewController {
             UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveLinear, animations: {
                 sender.isSelected = !sender.isSelected
                 sender.transform = .identity
+                if sender.alpha < 0.2{
+                    print("---------- Change alpha ----------")
+                    sender.alpha = 1
+                }
+                else{
+                    sender.alpha = 0.1
+                }
             }, completion: nil)
         }
     }
@@ -105,10 +117,31 @@ class TestCheckBoxViewController: UIViewController {
             UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveLinear, animations: {
                 sender.isSelected = !sender.isSelected
                 sender.transform = .identity
+                if sender.alpha < 0.2 {
+                    sender.alpha = 1
+                }
+                else{
+                    sender.alpha = 0.1
+                }
             }, completion: nil)
         }
     }
     
     @IBAction func checkFinger6(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveLinear, animations: {
+            sender.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+            
+        }) { (success) in
+            UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveLinear, animations: {
+                sender.isSelected = !sender.isSelected
+                sender.transform = .identity
+                if sender.alpha < 0.2 {
+                    sender.alpha = 1
+                }
+                else{
+                    sender.alpha = 0.1
+                }
+            }, completion: nil)
+        }
     }
 }
