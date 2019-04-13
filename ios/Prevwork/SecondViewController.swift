@@ -18,9 +18,11 @@ class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     @IBOutlet weak var AgePick: UIPickerView!
     @IBOutlet weak var OccupPick: UIPickerView!
     
-    var age = ["10-20", "20-30", "30-40"];
+    var age = [("Under 14"),("14 to 15"),("16 to 19"),("20 to 24"),("25 to 34"),("35 to 44"),("45 to 54"),("55 to 64"), ("65 and over")]
     var sex = ["Male", "Female"];
-    var occupation = ["Construction", "Health"];
+    var occupation = [("Goods producing industries"), ("Natural resources and mining"),("Agriculture, forestry, fishing and hunting"), (" Mining,Construction"),("Manufacturing"),("Service providing industries"),(" Trade, Transportation and utilities"),("Wholesale trade"),("Retail trade"),(" Transportation and warehousing"),( "Utilities"),("Information"),("Financial activities"),("Finance and insurance"),(" Real estate and rental and leasing"),("Professional and business services"),(" Professional, scientific, and technical services"),(" Management of companies and enterprises"),
+        (" Administrative and support and waste management and remediation services"),(" Education and health services"),(" Educational services"),(" Health care and social assistance"),(" Leisure and hospitality"),(" Arts, entertainment, and recreation"),(" Accommodation and food services"),
+        (" Other services"),(" Other services, except public administration"),(" Public administration")]
     var desiredBodyPart: Int!
     var desiredBodyPartArray = ["Face", "Neck", "Thyroid", "Left Breast", "Right Breast", "Spleen", "Liver", "Stomach", "Abdomen", "Pelvis", "Genitals","Thighs","Legs", "Arms", "Feet", "Arms", "Back of Head", "Nape", "Upper Back", "Middle Back",
     "Lower Back", "Back of thighs", "calves", "feet"];
@@ -97,9 +99,21 @@ class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bodyPart.text =  desiredBodyPartArray[desiredBodyPart + 1]
     }
 
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let vc = segue.destination as! RiskResultViewController
+        
+        print([SexPick.selectedRow(inComponent: 0)])
+        if(sex[SexPick.selectedRow(inComponent: 0)] == "Male"){
+            vc.gender = 0;
+        } else{
+            vc.gender = 1;
+        }
+        
+        vc.industry = OccupPick.selectedRow(inComponent: 0);
+        vc.age = AgePick.selectedRow(inComponent: 0);
+    }
 }
 

@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController {
 
     @IBOutlet weak var companyTextField: UILabel!
     @IBOutlet weak var usernameTextField: UILabel!
+    
     @IBOutlet weak var industryTextField: UILabel!
     @IBOutlet weak var sizeTextField: UILabel!
     @IBOutlet weak var locationTextField: UILabel!
@@ -25,7 +26,7 @@ class ProfileViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         profileImage.layer.borderColor = UIColor.white.cgColor;
-        profileImage.layer.borderWidth = 10;
+        profileImage.layer.borderWidth = 0;
         
         let standard = UserDefaults.standard
         
@@ -48,5 +49,37 @@ class ProfileViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    @IBAction func signOut(_ sender: Any) {
+        
+        UserDefaults.standard.set(false, forKey: "loggedin")
+        var root: UIViewController?
+        root = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "signin")
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window?.rootViewController = root
+    }
+    
+    
+    @IBAction func openImageGallery(_ sender: Any) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.mediaTypes = ["public.image"]
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+    
 
+}
+
+extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        let imageData: Data = image!.pngData()!
+        let imageURL = imageData.base64EncodedString()
+        profileImage.image = image
+        self.dismiss(animated: true, completion: nil)
+        
+        
+    }
 }
