@@ -99,6 +99,8 @@ class SecondViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // hide the key board when tapping around
+        self.hideKeyboardWhenTappedAround()
     }
 
     
