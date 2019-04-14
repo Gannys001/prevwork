@@ -13,6 +13,7 @@ class SigninViewController: UIViewController {
         alertLabel.textColor = .red
         
         // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
     }
     
     
@@ -40,7 +41,7 @@ class SigninViewController: UIViewController {
         } else {
             var params = ["username": username!, "password": password!]
             guard let jsonData = try? JSONSerialization.data(withJSONObject: params, options: []) else {return}
-            guard let url = URL(string: "http:127.0.0.1:3008/signin1") else {return}
+            guard let url = URL(string: "http:10.25.47.132:3008/signin1") else {return}
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
             request.httpBody = jsonData
@@ -94,3 +95,18 @@ class SigninViewController: UIViewController {
         
     }
 }
+
+
+extension UIViewController {
+    
+    func hideKeyboardWhenTappedAround() {
+        let tapGesture = UITapGestureRecognizer(target: self,
+                                                action: #selector(hideKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func hideKeyboard() {
+        view.endEditing(true)
+    }
+}
+

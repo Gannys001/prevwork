@@ -108,8 +108,47 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         alert.isHidden = true
         alert.textColor = UIColor.red
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        //tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
+        self.hideKeyboard()
     }
-
-
+    
+    @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
+        if username.isFirstResponder {
+            username.resignFirstResponder()
+        }
+        if password.isFirstResponder {
+            password.resignFirstResponder()
+        }
+    }
+    
+    func dismissKeyboard() {
+        print("in dismiss keyboard function")
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
+    }
 }
+//
+//extension UIViewController {
+//
+//    func hideKeyboardWhenTappedAround() {
+//        let tapGesture = UITapGestureRecognizer(target: self,
+//                                                action: #selector(hideKeyboard))
+//        view.addGestureRecognizer(tapGesture)
+//    }
+//
+//    @objc func hideKeyboard() {
+//        view.endEditing(true)
+//    }
+//}
 

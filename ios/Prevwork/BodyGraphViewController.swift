@@ -33,7 +33,7 @@ class BodyGraphViewController: UIViewController {
             button.isSelected = false;
         }
         button18.isSelected = true;
-        buttonCancel.isHidden = false
+        //buttonCancel.isHidden = false
         buttonConfirm.isHidden = false
         detailedinfo.isHidden = false
         detailedinfo.text = "You want to know more about middle back?";
@@ -45,7 +45,7 @@ class BodyGraphViewController: UIViewController {
             button.isSelected = false;
         }
         button17.isSelected = true;
-        buttonCancel.isHidden = false
+        //buttonCancel.isHidden = false
         buttonConfirm.isHidden = false
         detailedinfo.isHidden = false
         detailedinfo.text = "You want to know more about upper back?";
@@ -57,7 +57,7 @@ class BodyGraphViewController: UIViewController {
             button.isSelected = false;
         }
         button19.isSelected = true;
-        buttonCancel.isHidden = false
+       // buttonCancel.isHidden = false
         buttonConfirm.isHidden = false
         detailedinfo.isHidden = false
         detailedinfo.text = "You want to know more about lower back?";
@@ -68,7 +68,7 @@ class BodyGraphViewController: UIViewController {
         for case let button as UIButton in self.view.subviews {
             button.isSelected = false;
         }
-        buttonCancel.isHidden = true
+      //  buttonCancel.isHidden = true
         buttonConfirm.isHidden = true
         detailedinfo.isHidden = true
     }
