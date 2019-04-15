@@ -18,9 +18,9 @@ class RecoveryDetailedViewController: UIViewController{
     
     // declared the desired value
     var desiredLabelValue: String!
-    var infoArray:[String] = ["-- nonpharmacologic therapy with superficial heat and continued activity. \n --superficial heat, massage, exercise therapy (often with physical therapy), spinal manipulation, or acupuncture are reasonable. \n --Bed rest is not advised."]
+    var infoArray:[String] = ["-- nonpharmacologic therapy with superficial heat and continued activity. \n --superficial heat, massage, exercise therapy (often with physical therapy), spinal manipulation, or acupuncture are reasonable. \n --Bed rest is not advised.","-- Rest.\n -- Stop any physical activity that causes pain, and keep your foot still when possible.\n -- Ice your foot for 20 minutes 2 to 3 times a day.\n -- DO NOT apply ice directly to your skin. \n"]
 
-    var imageArray:[String] = ["walk-icon.jpg", "aero.png", "yoga.png"]
+    var imageArray:[String] = ["walk-icon.jpg", "aero.png", "yoga.png" , "relax.png"]
     
     @IBOutlet weak var clickMe: UIButton!
     
@@ -34,6 +34,16 @@ class RecoveryDetailedViewController: UIViewController{
             RecoveryTime.text = "4 weeks";
             detailedText.text = infoArray[0];
             var imageName = imageArray[0]
+            var image = UIImage(named: imageName)
+            RecoveryImage1.image = image
+            imageName = imageArray[2]
+            image = UIImage(named: imageName)
+            RecoveryImage2.image = image
+        }
+        if(desiredLabelValue == "Sprains"){
+            RecoveryTime.text = "2-4 weeks"
+            detailedText.text = infoArray[1];
+            var imageName = imageArray[3]
             var image = UIImage(named: imageName)
             RecoveryImage1.image = image
             imageName = imageArray[2]
