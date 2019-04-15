@@ -10,12 +10,17 @@ import UIKit
 
 class BodyGraphViewController: UIViewController {
     @IBOutlet weak var button18: UIButton!
+   // @IBOutlet weak var button17: UIButton!
     @IBOutlet weak var button19: UIButton!
     @IBOutlet weak var buttonConfirm: UIButton!
+    @IBOutlet weak var button15: UIButton!
     @IBOutlet weak var buttonCancel: UIButton!
     @IBOutlet weak var detailedinfo: UILabel!
-    
+    @IBOutlet weak var button16: UIButton!
     @IBOutlet weak var button17: UIButton!
+    @IBOutlet weak var button20: UIButton!
+    @IBOutlet weak var button21: UIButton!
+    @IBOutlet weak var button22: UIButton!
     
     // select button
     var selected: Int = 0;
@@ -62,6 +67,65 @@ class BodyGraphViewController: UIViewController {
         detailedinfo.isHidden = false
         detailedinfo.text = "You want to know more about lower back?";
         selected = 19;
+    }
+    
+    @IBAction func button15Selected(_ sender: Any) {
+        for case let button as UIButton in self.view.subviews {
+            button.isSelected = false;
+        }
+        button15.isSelected = true;
+        // buttonCancel.isHidden = false
+        buttonConfirm.isHidden = false
+        detailedinfo.isHidden = false
+        detailedinfo.text = "You want to know more about back of head?";
+        selected = 15;
+    }
+    
+    @IBAction func button16Selected(_ sender: Any) {
+        for case let button as UIButton in self.view.subviews {
+            button.isSelected = false;
+        }
+        button16.isSelected = true;
+        // buttonCancel.isHidden = false
+        buttonConfirm.isHidden = false
+        detailedinfo.isHidden = false
+        detailedinfo.text = "You want to know more about back of kape?";
+        selected = 16;
+    }
+    
+    @IBAction func button21Selected(_ sender: Any) {
+        for case let button as UIButton in self.view.subviews {
+            button.isSelected = false;
+        }
+        button21.isSelected = true;
+        // buttonCancel.isHidden = false
+        buttonConfirm.isHidden = false
+        detailedinfo.isHidden = false
+        detailedinfo.text = "You want to know more about back of calves?";
+        selected = 21;
+    }
+    @IBAction func button20Selected(_ sender: Any) {
+        for case let button as UIButton in self.view.subviews {
+            button.isSelected = false;
+        }
+        button20.isSelected = true;
+        // buttonCancel.isHidden = false
+        buttonConfirm.isHidden = false
+        detailedinfo.isHidden = false
+        detailedinfo.text = "You want to know more about back of thighs?";
+        selected = 20;
+    }
+    
+    @IBAction func button22Selected(_ sender: Any) {
+        for case let button as UIButton in self.view.subviews {
+            button.isSelected = false;
+        }
+        button22.isSelected = true;
+        // buttonCancel.isHidden = false
+        buttonConfirm.isHidden = false
+        detailedinfo.isHidden = false
+        detailedinfo.text = "You want to know more about back of Feet?";
+        selected = 22;
     }
     
     @IBAction func cancelClicked(_ sender: Any) {
