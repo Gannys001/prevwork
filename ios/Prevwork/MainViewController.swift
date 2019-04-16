@@ -42,6 +42,12 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         }
     }
 
+    @IBAction func DidShowUrl(_ sender: Any) {
+        if let url = NSURL(string: "http://localhost:5000/"){
+            UIApplication.shared.openURL(url as URL)
+        }
+    }
+    
     //send the title of the current story board
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if (segue.identifier == "ToStateDetailed") {

@@ -109,13 +109,15 @@ class FirstViewController: UIViewController {
         alert.isHidden = true
         alert.textColor = UIColor.red
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        self.hideKeyboardWhenTappedAround()
         
-        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
-        //tap.cancelsTouchesInView = false
-        
-        view.addGestureRecognizer(tap)
-        self.hideKeyboard()
+//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+//        
+//        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+//        //tap.cancelsTouchesInView = false
+//        
+//        view.addGestureRecognizer(tap)
+//        self.hideKeyboard()
     }
     
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
@@ -151,4 +153,5 @@ class FirstViewController: UIViewController {
 //        view.endEditing(true)
 //    }
 //}
+
 
