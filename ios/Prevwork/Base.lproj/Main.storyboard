@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.59" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.45"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1193,55 +1193,55 @@
                                 <color key="backgroundColor" red="0.2603681357" green="0.48968547540000001" blue="0.96080166099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="loginBGCard" translatesAutoresizingMaskIntoConstraints="NO" id="KBI-e3-Lj6">
-                                <rect key="frame" x="0.0" y="83" width="414" height="16"/>
+                                <rect key="frame" x="0.0" y="83" width="414" height="477"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e01-q0-BlD" customClass="LoginTextField" customModule="Prevwork" customModuleProvider="target">
-                                <rect key="frame" x="67" y="303" width="280" height="60"/>
+                                <rect key="frame" x="67" y="385" width="280" height="60"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIRM PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTB-dy-pVX">
-                                <rect key="frame" x="77" y="309" width="154" height="18"/>
+                                <rect key="frame" x="77" y="391" width="154" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5yg-Nk-I9v" customClass="LoginTextField" customModule="Prevwork" customModuleProvider="target">
-                                <rect key="frame" x="67" y="229" width="280" height="60"/>
+                                <rect key="frame" x="67" y="311" width="280" height="60"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PrevWorks_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="VT2-ft-rcz">
-                                <rect key="frame" x="98" y="108" width="218" height="16"/>
+                                <rect key="frame" x="98" y="107.99999999999999" width="218" height="98.000000000000043"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xRc-FM-vHg" customClass="LoginTextField" customModule="Prevwork" customModuleProvider="target">
-                                <rect key="frame" x="67" y="156" width="280" height="60"/>
+                                <rect key="frame" x="67" y="238" width="280" height="60"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTg-g8-5n3">
-                                <rect key="frame" x="74" y="164" width="101" height="18"/>
+                                <rect key="frame" x="74" y="246" width="101" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4YM-cg-buu">
-                                <rect key="frame" x="77" y="235" width="83" height="18"/>
+                                <rect key="frame" x="77" y="317" width="83" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opf-7N-GcZ">
-                                <rect key="frame" x="69" y="133" width="42" height="21"/>
+                                <rect key="frame" x="69" y="215" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2c1-zW-oLH">
-                                <rect key="frame" x="67" y="373" width="280" height="38"/>
+                                <rect key="frame" x="67" y="455" width="280" height="38"/>
                                 <color key="backgroundColor" red="0.61176470589999998" green="0.75686274509999996" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="REGISTER">
@@ -1336,10 +1336,10 @@
                                 <color key="backgroundColor" red="0.2603681357" green="0.48968547540000001" blue="0.96080166099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="loginBGCard" translatesAutoresizingMaskIntoConstraints="NO" id="oUJ-JO-CiT">
-                                <rect key="frame" x="12" y="55" width="390" height="16"/>
+                                <rect key="frame" x="12" y="55" width="390" height="477"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PrevWorks_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZpG-ph-wBJ">
-                                <rect key="frame" x="118" y="194" width="178" height="16"/>
+                                <rect key="frame" x="118" y="111.99999999999999" width="178" height="98.000000000000043"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="urc-OK-12A" customClass="LoginTextField" customModule="Prevwork" customModuleProvider="target">
                                 <rect key="frame" x="67" y="326" width="280" height="60"/>
