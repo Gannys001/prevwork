@@ -20,6 +20,7 @@
 		11C9C47822616705005A17AF /* ReportReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9C47722616705005A17AF /* ReportReviewViewController.swift */; };
 		11C9C47A226167CF005A17AF /* InjuryDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9C479226167CF005A17AF /* InjuryDescriptionViewController.swift */; };
 		11EA7180224EF139001205E2 /* BodyFrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA717F224EF139001205E2 /* BodyFrontViewController.swift */; };
+		413F2803226702A300CEFC9F /* Expandable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413F2802226702A300CEFC9F /* Expandable.swift */; };
 		415E72642227CC2C00DEB7DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415E72632227CC2C00DEB7DF /* AppDelegate.swift */; };
 		415E72662227CC2C00DEB7DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415E72652227CC2C00DEB7DF /* ViewController.swift */; };
 		415E72692227CC2C00DEB7DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415E72672227CC2C00DEB7DF /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 		11C9C47722616705005A17AF /* ReportReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportReviewViewController.swift; sourceTree = "<group>"; };
 		11C9C479226167CF005A17AF /* InjuryDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjuryDescriptionViewController.swift; sourceTree = "<group>"; };
 		11EA717F224EF139001205E2 /* BodyFrontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyFrontViewController.swift; sourceTree = "<group>"; };
+		413F2802226702A300CEFC9F /* Expandable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expandable.swift; sourceTree = "<group>"; };
 		415E72602227CC2C00DEB7DF /* ios_employee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_employee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		415E72632227CC2C00DEB7DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		415E72652227CC2C00DEB7DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				415E72632227CC2C00DEB7DF /* AppDelegate.swift */,
 				415E72652227CC2C00DEB7DF /* ViewController.swift */,
 				415E72672227CC2C00DEB7DF /* Main.storyboard */,
+				413F2802226702A300CEFC9F /* Expandable.swift */,
 				11BE652122334F6E00CA51CF /* ReportFilingViewController.swift */,
 				11BE651F2233471F00CA51CF /* TestCheckBoxViewController.swift */,
 				415E726A2227CC2D00DEB7DF /* Assets.xcassets */,
@@ -218,6 +221,7 @@
 				41E0231B22652A8100E90528 /* LoginTextField.swift in Sources */,
 				41E023132263FDC400E90528 /* DetailSafetyCollectionViewCell.swift in Sources */,
 				11C9C46E22601A4B005A17AF /* BodyBackViewController.swift in Sources */,
+				413F2803226702A300CEFC9F /* Expandable.swift in Sources */,
 				114A5A282228F13700303201 /* DLRadioButton.m in Sources */,
 				11BE652222334F6E00CA51CF /* ReportFilingViewController.swift in Sources */,
 				1138603322581E5E001C2BBE /* FormPart1ViewController.swift in Sources */,
