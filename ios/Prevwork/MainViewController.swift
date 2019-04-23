@@ -34,7 +34,7 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         let standard = UserDefaults.standard
         print(standard.bool(forKey: "loggedin"))
-        if (standard.object(forKey: "loggedin") == nil || standard.bool(forKey: "loggedin") == false) {
+        if (standard.object(forKey: "loggedin") == nil || standard.bool(forKey: "loggedin") == false || standard.object(forKey: "companyName") == nil) {
             var root: UIViewController?
             root = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "signin")
             let appDelegate = UIApplication.shared.delegate as! AppDelegate

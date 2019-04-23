@@ -18,15 +18,23 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var locationTextField: UILabel!
     @IBOutlet weak var foundedTextField: UILabel!
     
+    @IBOutlet weak var profileTable: UITableView!
     
     
     @IBOutlet weak var profileImage: UIImageView!
+    
+    var profileRows: [ProfileRow] = []
+    override func viewDidAppear(_ animated: Bool) {
+        print("Profile appears again")
+        reload()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         profileImage.layer.borderColor = UIColor.white.cgColor;
         profileImage.layer.borderWidth = 0;
+        profileTable.tableFooterView = UIView()
         
         let standard = UserDefaults.standard
         
@@ -36,6 +44,9 @@ class ProfileViewController: UIViewController {
         locationTextField.text = standard.string(forKey: "location")
         foundedTextField.text = standard.string(forKey: "founded")
         companyTextField.text = standard.string(forKey: "companyName")
+        
+        profileTable.dataSource = self
+        profileTable.delegate = self
         
     }
     
@@ -49,6 +60,12 @@ class ProfileViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "editProfile") {
+            let profileEditorViewController = segue.destination as! ProfileEditorViewController
+            profileEditorViewController.editTitle = (sender as! UIButton).titleLabel?.text
+        }
+    }
     
     
     @IBAction func signOut(_ sender: Any) {
@@ -69,6 +86,13 @@ class ProfileViewController: UIViewController {
         self.present(imagePicker, animated: true, completion: nil)
     }
     
+    func reload() {
+        profileRows = createProfile()
+        profileTable.reloadData()
+
+
+    }
+    
 
 }
 
@@ -83,3 +107,40 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         
     }
 }
+
+extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return profileRows.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let row = profileRows[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileCell") as! ProfileTableViewCell
+        cell.setCell(row: row)
+        return cell
+    }
+    
+    
+}
+
+func createProfile() -> [ProfileRow] {
+    var rows: [ProfileRow] = []
+    let standard = UserDefaults.standard
+    let companyName = ProfileRow(title: "Company Name", value: standard.string(forKey: "companyName")!)
+    let username = ProfileRow(title: "Username", value: standard.string(forKey: "username")!)
+    let industry = ProfileRow(title: "Industry", value: standard.string(forKey: "industry")!)
+    let companySize = ProfileRow(title: "Company Size", value: standard.string(forKey: "size")!)
+    let founded = ProfileRow(title: "Founded", value: standard.string(forKey: "founded")!)
+    let location = ProfileRow(title: "Location", value: standard.string(forKey: "location")!)
+    rows.append(companyName)
+    rows.append(username)
+    rows.append(industry)
+    rows.append(companySize)
+    rows.append(founded)
+    rows.append(location)
+    return rows
+    
+}
+
+
+

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0FDA3A226F0BAD005D9B92 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0FDA39226F0BAD005D9B92 /* ProfileTableViewCell.swift */; };
+		2A0FDA3C226F3066005D9B92 /* ProfileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0FDA3B226F3066005D9B92 /* ProfileRow.swift */; };
 		2A614C3B22597BD9004626AC /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A614C3A22597BD9004626AC /* SigninViewController.swift */; };
 		2A614C3D22598BCD004626AC /* TherapyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A614C3C22598BCD004626AC /* TherapyViewController.swift */; };
 		2AAE161C221E07F400E88F02 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE161B221E07F400E88F02 /* LoginTextField.swift */; };
@@ -56,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0FDA39226F0BAD005D9B92 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		2A0FDA3B226F3066005D9B92 /* ProfileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRow.swift; sourceTree = "<group>"; };
 		2A614C3A22597BD9004626AC /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		2A614C3C22598BCD004626AC /* TherapyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapyViewController.swift; sourceTree = "<group>"; };
 		2AAE161B221E07F400E88F02 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
@@ -146,6 +150,9 @@
 				EA82202B221B4F8B00CE07C9 /* AppDelegate.swift */,
 				EA82202D221B4F8B00CE07C9 /* FirstViewController.swift */,
 				2AAE161F2228AC4B00E88F02 /* ProfileViewController.swift */,
+				2A0FDA3B226F3066005D9B92 /* ProfileRow.swift */,
+				2A0FDA39226F0BAD005D9B92 /* ProfileTableViewCell.swift */,
+				2AAE16212228BF3E00E88F02 /* ProfileEditorViewController.swift */,
 				EA82202F221B4F8B00CE07C9 /* SecondViewController.swift */,
 				EA822031221B4F8B00CE07C9 /* Main.storyboard */,
 				2A614C3C22598BCD004626AC /* TherapyViewController.swift */,
@@ -162,7 +169,6 @@
 				EAB543FF222D004F008AFF98 /* CollectionViewCell.swift */,
 				EAD91A252229C1FC0027A58C /* RecoveryViewController.swift */,
 				EA9D8F122228D9FA00EE41B5 /* PreventDetailedViewController.swift */,
-				2AAE16212228BF3E00E88F02 /* ProfileEditorViewController.swift */,
 				EA0CFAC02226800B00093E38 /* FourthViewController.swift */,
 				EA0CFAC22226804B00093E38 /* PreventClass.swift */,
 				EA0CFABE22267F4000093E38 /* PreventiveMethodTableViewCell.swift */,
@@ -332,6 +338,7 @@
 				EA0CFAC32226804B00093E38 /* PreventClass.swift in Sources */,
 				EA9D8F132228D9FA00EE41B5 /* PreventDetailedViewController.swift in Sources */,
 				EA1C24F52230C6060075B4C2 /* RecoveryDetailedViewController.swift in Sources */,
+				2A0FDA3A226F0BAD005D9B92 /* ProfileTableViewCell.swift in Sources */,
 				2AAE16222228BF3E00E88F02 /* ProfileEditorViewController.swift in Sources */,
 				2AAE161C221E07F400E88F02 /* LoginTextField.swift in Sources */,
 				EA82202C221B4F8B00CE07C9 /* AppDelegate.swift in Sources */,
@@ -342,6 +349,7 @@
 				EAD91A262229C1FC0027A58C /* RecoveryViewController.swift in Sources */,
 				EA0CFABF22267F4000093E38 /* PreventiveMethodTableViewCell.swift in Sources */,
 				EA581603224C29F200E6DCDF /* PopUpViewController.swift in Sources */,
+				2A0FDA3C226F3066005D9B92 /* ProfileRow.swift in Sources */,
 				2AAE16202228AC4B00E88F02 /* ProfileViewController.swift in Sources */,
 				EA82202E221B4F8B00CE07C9 /* FirstViewController.swift in Sources */,
 				EA81C3C8224479C900CFCC29 /* RiskResultViewController.swift in Sources */,

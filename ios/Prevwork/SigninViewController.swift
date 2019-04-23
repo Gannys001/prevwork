@@ -67,7 +67,7 @@ class SigninViewController: UIViewController {
                         
                         
                         let standard = UserDefaults.standard
-                        standard.set(json["companyName"], forKey: "CompanyName")
+                        standard.set(json["companyName"], forKey: "companyName")
                         standard.set(json["founded"], forKey: "founded")
                         standard.set(json["industry"], forKey: "industry")
                         standard.set(json["location"], forKey: "location")
