@@ -13,7 +13,6 @@ class BodyGraphViewController: UIViewController {
    // @IBOutlet weak var button17: UIButton!
     @IBOutlet weak var button19: UIButton!
     @IBOutlet weak var buttonConfirm: UIButton!
-    @IBOutlet weak var button15: UIButton!
     @IBOutlet weak var buttonCancel: UIButton!
     @IBOutlet weak var detailedinfo: UILabel!
     @IBOutlet weak var button16: UIButton!
@@ -22,6 +21,7 @@ class BodyGraphViewController: UIViewController {
     @IBOutlet weak var button21: UIButton!
     @IBOutlet weak var button22: UIButton!
     
+    @IBOutlet weak var button15: UIButton!
     // select button
     var selected: Int = 0;
     
@@ -38,7 +38,7 @@ class BodyGraphViewController: UIViewController {
             button.isSelected = false;
         }
         button18.isSelected = true;
-        //buttonCancel.isHidden = false
+        buttonCancel.isHidden = false
         buttonConfirm.isHidden = false
         detailedinfo.isHidden = false
         detailedinfo.text = "You want to know more about middle back?";
@@ -50,7 +50,7 @@ class BodyGraphViewController: UIViewController {
             button.isSelected = false;
         }
         button17.isSelected = true;
-        //buttonCancel.isHidden = false
+        buttonCancel.isHidden = false
         buttonConfirm.isHidden = false
         detailedinfo.isHidden = false
         detailedinfo.text = "You want to know more about upper back?";
@@ -62,7 +62,7 @@ class BodyGraphViewController: UIViewController {
             button.isSelected = false;
         }
         button19.isSelected = true;
-       // buttonCancel.isHidden = false
+        buttonCancel.isHidden = false
         buttonConfirm.isHidden = false
         detailedinfo.isHidden = false
         detailedinfo.text = "You want to know more about lower back?";
@@ -74,7 +74,7 @@ class BodyGraphViewController: UIViewController {
             button.isSelected = false;
         }
         button15.isSelected = true;
-        // buttonCancel.isHidden = false
+         buttonCancel.isHidden = false
         buttonConfirm.isHidden = false
         detailedinfo.isHidden = false
         detailedinfo.text = "You want to know more about back of head?";
@@ -86,7 +86,7 @@ class BodyGraphViewController: UIViewController {
             button.isSelected = false;
         }
         button16.isSelected = true;
-        // buttonCancel.isHidden = false
+         buttonCancel.isHidden = false
         buttonConfirm.isHidden = false
         detailedinfo.isHidden = false
         detailedinfo.text = "You want to know more about back of kape?";
@@ -98,7 +98,7 @@ class BodyGraphViewController: UIViewController {
             button.isSelected = false;
         }
         button21.isSelected = true;
-        // buttonCancel.isHidden = false
+         buttonCancel.isHidden = false
         buttonConfirm.isHidden = false
         detailedinfo.isHidden = false
         detailedinfo.text = "You want to know more about back of calves?";
@@ -109,7 +109,7 @@ class BodyGraphViewController: UIViewController {
             button.isSelected = false;
         }
         button20.isSelected = true;
-        // buttonCancel.isHidden = false
+         buttonCancel.isHidden = false
         buttonConfirm.isHidden = false
         detailedinfo.isHidden = false
         detailedinfo.text = "You want to know more about back of thighs?";
@@ -121,7 +121,7 @@ class BodyGraphViewController: UIViewController {
             button.isSelected = false;
         }
         button22.isSelected = true;
-        // buttonCancel.isHidden = false
+         buttonCancel.isHidden = false
         buttonConfirm.isHidden = false
         detailedinfo.isHidden = false
         detailedinfo.text = "You want to know more about back of Feet?";
@@ -132,7 +132,7 @@ class BodyGraphViewController: UIViewController {
         for case let button as UIButton in self.view.subviews {
             button.isSelected = false;
         }
-      //  buttonCancel.isHidden = true
+        buttonCancel.isHidden = true
         buttonConfirm.isHidden = true
         detailedinfo.isHidden = true
     }

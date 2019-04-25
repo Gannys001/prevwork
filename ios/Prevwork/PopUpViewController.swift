@@ -64,13 +64,27 @@ class PopUpViewController: UIViewController {
     
     @IBAction func purchase(_ sender: Any) {
         // check which button is selected
+        let standard = UserDefaults.standard
+//        let packageVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "package") as! PurchasePackageViewController
+        
         if(silverButton.isSelected){
             // do something
+            standard.set("silver", forKey: "package")
+//            packageVC.packageTitle.text = "You have purchased the silver package"
         } else if(platinumButton.isSelected){
             // do something
+//            packageVC.packageTitle.text = "You have purchased the platinum package"
+            standard.set("platinum", forKey: "package")
         } else if(goldButton.isSelected){
             // do something
+            standard.set("gold", forKey: "package")
+//            packageVC.packageTitle.text = "You have purchased the gold package"
         }
+        
+        NotificationCenter.default.post(name: Notification.Name("purchaseNotification"), object: nil)
+        
+       
+        
         self.view.removeFromSuperview()
     }
     /*

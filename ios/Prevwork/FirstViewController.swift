@@ -71,6 +71,7 @@ class FirstViewController: UIViewController {
                         standard.set("N/A", forKey: "industry")
                         standard.set("N/A", forKey: "location")
                         standard.set("N/A", forKey: "founded")
+                        standard.set(nil, forKey: "package")
                         
                         success = true
                         

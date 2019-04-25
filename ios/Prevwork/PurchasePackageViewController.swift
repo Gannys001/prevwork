@@ -10,6 +10,11 @@ import UIKit
 
 class PurchasePackageViewController: UIViewController {
 
+    @IBOutlet weak var packageTitle: UILabel!
+    
+    @IBOutlet weak var physicalLabel: UILabel!
+    @IBOutlet weak var chiropracticLabel: UILabel!
+    @IBOutlet weak var acupunctureLabel: UILabel!
     @IBAction func purchasePackage(_ sender: Any) {
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "pop") as! PopUpViewController
         self.addChild(popOverVC)
@@ -19,10 +24,20 @@ class PurchasePackageViewController: UIViewController {
         popOverVC.didMove(toParent: self)
     }
     
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("Purchase Package View Appears")
+        reloadTitle()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        reloadTitle()
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadTitle), name: Notification.Name("purchaseNotification"), object: nil)
     }
     
 
@@ -35,5 +50,31 @@ class PurchasePackageViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @objc func reloadTitle() {
+        let standard = UserDefaults.standard
+
+        if (standard.object(forKey: "package") == nil || standard.string(forKey: "package") == "None") {
+            packageTitle.text = "Your don't have any purchased package!"
+            physicalLabel.isHidden = true
+            chiropracticLabel.isHidden = true
+            acupunctureLabel.isHidden = true
+        } else if (standard.string(forKey: "package") == "gold") {
+            packageTitle.text = "You have purchased the gold package"
+            physicalLabel.isHidden = false
+            chiropracticLabel.isHidden = false
+            acupunctureLabel.isHidden = false
+        } else if (standard.string(forKey: "package") == "silver") {
+            packageTitle.text = "You have purchased the silver package"
+            physicalLabel.isHidden = false
+            chiropracticLabel.isHidden = false
+            acupunctureLabel.isHidden = true
+        } else if (standard.string(forKey: "package") == "platinum") {
+            packageTitle.text = "You have purchased the platinum package"
+            physicalLabel.isHidden = false
+            chiropracticLabel.isHidden = true
+            acupunctureLabel.isHidden = true
+        }
+    }
 
 }
