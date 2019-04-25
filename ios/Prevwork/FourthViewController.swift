@@ -19,6 +19,7 @@ class FourthViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Preventive Method";
+        tableView.tableFooterView = UIView()
         
     }
     
