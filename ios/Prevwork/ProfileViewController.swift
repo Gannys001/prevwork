@@ -36,9 +36,6 @@ class ProfileViewController: UIViewController {
         locationTextField.text = standard.string(forKey: "location")
         foundedTextField.text = standard.string(forKey: "founded")
         companyTextField.text = standard.string(forKey: "companyName")
-        print("Profile")
-        print(standard.string(forKey: "username")!)
-        print(standard.string(forKey: "industry")!)
         
     }
     

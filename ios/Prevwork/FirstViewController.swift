@@ -30,66 +30,77 @@ class FirstViewController: UIViewController {
         } else{
             alert.isHidden = true
             // convert the input fields to json data
-            let params : [String: String] = ["username": username.text!, "password": password.text!]
-            guard let jsonData = try? JSONSerialization.data(withJSONObject: params, options: []) else {
-                print("Error: cannot convert to JSON object")
-                return
-            }
-            
-            guard let url = URL(string: "http://127.0.0.1:3008/signup1") else {
-                print("Error url!!!!!!!")
-                return
-            }
-            var request = URLRequest(url: url)
-            request.httpMethod = "POST"
-            request.httpBody = jsonData
-            var headers = request.allHTTPHeaderFields ?? [:]
-            headers["Content-Type"] = "application/json"
-            request.allHTTPHeaderFields = headers
-            print("HttpBody!!!!!!")
-            print(String(data: request.httpBody!, encoding: String.Encoding.utf8)!)
-            let config = URLSessionConfiguration.default
-            let session = URLSession(configuration: config)
-            let semophore = DispatchSemaphore(value: 0)
-            session.dataTask(with: request) {(data, res, err) in
-                if let res = res as? HTTPURLResponse{
-                    if (res.statusCode == 404) {
-                        // Username already exist
-                        print("Username already exists")
-                        DispatchQueue.main.async {
-                            self.alert.text = "Username already exists"
-                            self.alert.isHidden = false
-                        }
-                    } else {
-                        // Signup successful
-                        print("Signup successful")
-                        let standard = UserDefaults.standard
-                        standard.set(params["username"], forKey: "username")
-                        standard.set(params["password"], forKey: "password")
-                        standard.set("N/A", forKey: "companyName")
-                        standard.set("N/A", forKey: "size")
-                        standard.set("N/A", forKey: "industry")
-                        standard.set("N/A", forKey: "location")
-                        standard.set("N/A", forKey: "founded")
-                        
-                        success = true
-                        
-                    }
-                } else{
-                    print("Error response!!!!!!")
-                }
-                if let data = data {
-                    print(data)
-                } else {
-                    print("Error Data!!!!!!")
-                }
-                semophore.signal()
-            }.resume()
-            semophore.wait()
+//            let params : [String: String] = ["username": username.text!, "password": password.text!]
+//            guard let jsonData = try? JSONSerialization.data(withJSONObject: params, options: []) else {
+//                print("Error: cannot convert to JSON object")
+//                return
+//            }
+//
+//            guard let url = URL(string: "http://127.0.0.1:3008/signup1") else {
+//                print("Error url!!!!!!!")
+//                return
+//            }
+//            var request = URLRequest(url: url)
+//            request.httpMethod = "POST"
+//            request.httpBody = jsonData
+//            var headers = request.allHTTPHeaderFields ?? [:]
+//            headers["Content-Type"] = "application/json"
+//            request.allHTTPHeaderFields = headers
+//            print("HttpBody!!!!!!")
+//            print(String(data: request.httpBody!, encoding: String.Encoding.utf8)!)
+//            let config = URLSessionConfiguration.default
+//            let session = URLSession(configuration: config)
+//            let semophore = DispatchSemaphore(value: 0)
+//            session.dataTask(with: request) {(data, res, err) in
+//                if let res = res as? HTTPURLResponse{
+//                    if (res.statusCode == 404) {
+//                        // Username already exist
+//                        print("Username already exists")
+//                        DispatchQueue.main.async {
+//                            self.alert.text = "Username already exists"
+//                            self.alert.isHidden = false
+//                        }
+//                    } else {
+//                        // Signup successful
+//                        print("Signup successful")
+//                        let standard = UserDefaults.standard
+//                        standard.set(params["username"], forKey: "username")
+//                        standard.set(params["password"], forKey: "password")
+//                        standard.set("N/A", forKey: "companyName")
+//                        standard.set("N/A", forKey: "size")
+//                        standard.set("N/A", forKey: "industry")
+//                        standard.set("N/A", forKey: "location")
+//                        standard.set("N/A", forKey: "founded")
+//
+//                        success = true
+//
+//                    }
+//                } else{
+//                    print("Error response!!!!!!")
+//                }
+//                if let data = data {
+//                    print(data)
+//                } else {
+//                    print("Error Data!!!!!!")
+//                }
+//                semophore.signal()
+//            }.resume()
+//            semophore.wait()
 //            let storyboard e//            var next = storyboard.instantiateViewController(withIdentifier: "FirstViewController")
 //            self.navigationController?.pushViewController(next, animated: false)
+            
+            print("Signup successful")
+            let standard = UserDefaults.standard
+            standard.set(username.text!, forKey: "username")
+            standard.set(password.text!, forKey: "password")
+            standard.set("N/A", forKey: "companyName")
+            standard.set("N/A", forKey: "size")
+            standard.set("N/A", forKey: "industry")
+            standard.set("N/A", forKey: "location")
+            standard.set("N/A", forKey: "founded")
+            
+            success = true
         }
-        print(success)
         if (success){
             
 //            let profile = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileEditorViewController") as! ProfileEditorViewController
